@@ -1,0 +1,1233 @@
+<title>PMQC E-BOOK </title>
+
+<link rel="icon" href="asset/pmqcicon.ico" type="image/x-icon">
+<meta charset='utf-8' />
+<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+<meta name='google' content='notranslate' />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<!------link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton&effect=neon"----->
+
+
+<head>
+
+  <style>
+html {height: 100%;}
+body {margin: 0;
+  font-family: az_ea_font,"Segoe UI",az_font,system-ui,-apple-system,BlinkMacSystemFont,Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;}
+
+  @keyframes slide {0% {transform: translateX(-25%);}100% {transform: translateX(25%);}}
+hr{font-size: 8px;}
+.homeword{   color:  #132e61;
+  text-decoration: none;
+  background-color: rgba(234, 243, 248);
+  font-size: 12px;
+  font-weight: bold;vertical-align: text-bottom;
+  position:absolute;
+  top:0px;left:0px;height: 40px;width: 40px;}
+  .pmqc     {color: #1D4289;text-align: left;font-size: 14px;font-weight: bold;padding: 1px 1px;text-decoration: none;}
+  .version  {position: absolute;top: 5;right: 0;text-align: right;}
+  .backbutton { height: 40px;width: 30px;font-size: 35px;border: 0px solid;line-height: 0px;
+    color: #1D4289;cursor:pointer ;
+    margin:0px 0px;position:absolute;top:0px;left:0px;background-color:transparent;}
+.backbutton:hover { background-color: rgba(234, 243, 248);}
+.kedepan { height: 30px;border: 0px solid;color: #1D4289;margin-left: 40px;margin-top: 5px;}
+.tajuk  {padding:5px 5px;font-weight: bold;font-size: 16px;margin: 5px 5px;text-shadow: 2px 3px rgb(0 0 1 / 10%) ;color: rgba(255,255,255,0.1);
+color: #1c4786;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+animation-name: induk;animation-duration: 10s;animation-iteration-count: infinite;}
+
+
+  /* span2 yang spesel */
+
+
+.alert    {position: absolute;top: 30%;left: 50%;text-align: center;-ms-transform: rotate(-45deg);-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-o-transform: rotate(-45deg);-sand-transform: rotate(-45deg); transform: rotate(-45deg);}
+.logo     {position: absolute;top: 0px;left: 2;}
+.tajukasal {color: #1d4289;font-weight: bold;font-size: 20px;margin: 5px 5px;text-shadow: 2px 3px rgb(0 0 1 / 10%);}
+.kepalo   {color: #1d4289;font-weight: bold;font-size: 13px;margin: 1px 1px;text-decoration: none;}
+.link     {margin-left: 50px;padding: 5px 3px;color: #1d4289;font-size: 16px;}
+.xx       {float:right;border-radius: 10%;color: rgb(19, 12, 37);text-align: center; width: 15px;font-size: 11px;border: none;display: inline-block;cursor: pointer;background: none;font-weight: bold;border:2px solid rgb(7, 4, 31);}
+.homeicon {float:left;font-size: 14px;cursor: pointer;}
+.nombor   {border-radius: 50%;color: #1d4289;margin: 2px 1px;text-align: center;width: 20px;font-size: 10px; border: none;display: inline-block;cursor: pointer;background: #1d43892d;font-weight: bold;padding: 1px 1px;}
+
+/* butang2 BaskervilleBE-Bold  */  
+.temaxx   {color: white;border: 0px solid;border-bottom: 0px solid ;text-decoration: none;display: inline-block;cursor: pointer;
+  background: #940000;padding: 0px 5px; background: -moz-linear-gradient(top, #ff7a7a 0%, #ff1414 66%, #940000 100%);background: -webkit-linear-gradient(top, #ff7a7a 0%, #ff1414 66%, #940000 100%);background: linear-gradient(to bottom, #ff7a7a 0%, #ff1414 66%, #940000 100%);}
+.tema     {font-weight:bold;color:  #1D4289;text-decoration: none;padding: 0px 5px;border: 0px solid ;display: inline-block;cursor: pointer;background:none;}
+.tema:hover { border: 0px solid#1D4289 ;background: linear-gradient(150deg,#ffffff, #f4f4fd, #7e8bb87e);}
+.tema:active{background:#132e614d;}
+
+
+.tema2  {color: white;border: 0px solid;border-bottom: 0px solid ;text-decoration: none;display: inline-block; background: #132e61;padding: 0px 5px;}
+#pass table button  {color: white;border: 0px solid;border-bottom: 0px solid ;text-decoration: none;display: inline-block;cursor: pointer;
+        background: #1D4289;font-size: 100px; border-radius: 10px  ;text-align: center ;width: 120px  ;height: 120px;margin: 3px 1px;background: linear-gradient(to bottom, #5785db 0%, #1D4289 66%, #1D4289 100%);}
+#pass table button:hover { text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #0000FF,0 0 0.6em #E5E5FF, 0 0 0.8em #E5E5FF, 0 0 1.0em #E5E5FF, 0 0 1.2em #E5E5FF;color: #fff;}
+#pass table button:active{background:#132e61;} #pass table {margin-left:auto;margin-right:auto;}
+.button2  {font-size:0.8em; border-radius: 0px   ;text-align: left   ;width: 100%  ;height: 30px;margin: 0px 3px;
+  font-family:"Calibri";font-weight: bold;}
+  /*"Corbel",sans-serif  */
+.sam      {font-size: 12px; border-radius: 5px   ;text-align: center ;width: 100px ;height: 25px;margin: 3px 1px;}
+.anak     {font-size: 12px; border-radius: 5px   ;text-align: center ;width: 30px  ;height: 25px;margin: 1px 1px;}
+.touch    {background:rgba(3, 5, 109, 0.15);font-size: 20px; border-radius: 10px  ;text-align: center ;width: 100%  ;height: 100px;margin: 3px 1px; -webkit-animation-duration: 1s;animation-duration: 1s;animation-fill-mode: both;animation-timing-function: ease-in-out;-webkit-animation-iteration-count: infinite;}
+.touch:hover { cursor: pointer;animation-name: bounce; -moz-animation-name: bounce;}
+  @keyframes bounce {	0%, 100%, 20%, 50%, 80% {-webkit-transform: translateY(0);-ms-transform: translateY(0);transform: translateY(0)}
+  40% {-webkit-transform: translateY(-30px);-ms-transform:translateY(-30px);transform: translateY(-30px)}
+  60% {-webkit-transform: translateY(-15px);-ms-transform:translateY(-15px);transform:translateY(-15px)}}
+.menumdr  {width: 100px ;}  
+.menu,.menumdr {font-size: 12px ;text-align: center ;height: 28px;background: white;border:1px solid  #D4E6F1;border-radius: 5px;margin: 0px 0px;}
+.menu     {width: 65px;}
+.menumdr:hover{background:#8eb2e918;border:1px solid  #D4E6F1;}
+.menu:hover{background:#8eb2e918;border:1px solid  #D4E6F1;}
+.linktable img {height: 30px; }.linktable td { width: 20%;} 
+  /* sampling punya  table*/
+
+  /* table letak button besar*/
+table.tapak             {width: 100%;border-collapse: collapse;}
+table.tapak tbody td    {padding: 2px 3px;height: 50px;}
+table.tapak thead td    {text-align: center;padding: 2px 3px;height: 30px;}
+table.notapak           {width: 100%;text-align: left;border-collapse: collapse;}
+table.notapak tbody td  {padding: 1px 1px;height: 200px;} 
+table.atas              {width: 100%;text-align: left;border-collapse: collapse;height: 150px}
+  /* table logo*/
+.top {font-family: BaskervilleBE-Bold;text-align:center;border:1px solid #1c4786;border-collapse: collapse;}
+.top th{font-size:17px;color:#FFFFFF;background:#1c4786}   
+.top tbody{font-size:7px;color:#1c4786;background:#FFFFFF;}   
+  /* table logo2*/
+.top2 {font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;font-weight:bold;text-align:center;border-collapse: collapse;margin-left:auto;margin-right:auto;}
+.top2 th{font-size:30px;color:#FFFFFF;background:#1c4786; padding:1px;border:2px solid #1c4786;}   
+.top2 tbody{font-size:11px;color:#1c4786;background:#FFFFFF;padding:1px;border:2px solid #1c4786;}
+.spacer{border:0px solid #ffffff}
+
+
+              /* bingkai2*/
+.countheight  {overflow: hidden; height: -webkit-calc(100% - 40px);height:    -moz-calc(100% - 40px);height: calc(100% - 40px);}
+.frame90 {width: 100%;overflow: hidden; }
+.framedepan {width: 100%;overflow: hidden; height: 95%;}
+.mastersampleframe  {width: 100%  ;overflow: hidden; height: -webkit-calc(100% - 35px);height:    -moz-calc(100% - 35px);height: calc(100% - 35px);}
+td .framedepan{overflow: hidden; height: 95%;}
+.besar      {width: 100%  ;overflow: hidden; height: -webkit-calc(100% - 75px);height:    -moz-calc(100% - 75px);height: calc(100% - 75px);}
+.mdrframe {width: 100%  ;overflow: hidden; height: 95%;}  
+iframe      {border: 0    ;border: 0;}
+.kecik      {width: 100%  ;height: 500px;background: white;}
+.checklist  {width: 880px ;height: 1220px;margin-left: 100px;}
+.contact    {width: 610px ;height: 450px;border: 0;}  
+/* Div */  
+.majuk          {position: absolute;  width:40%   ;      background:none;  top: 2px; right: 15px;  }
+.ummi           {position: absolute;  width:653px ;height: 120px  ;border: 0;            top: 0px; right: 0px;   }
+.kepalamdr      {position: absolute;  width:653px ;height:77px    ;border: 0;            top: 95px;left: 0px; background: #D4E6F1; display: none;}
+.artworkkepala  {position: absolute;  width:100%  ;height:35px    ;                      top: 0px;left: 0px; }
+.blocker        {position: absolute;  width:610px ;height: 60px  ;background: #D4E6F1;  top: 760px; left: 0px;color: #1d4289;}
+.texthover { position: relative;display: inline-block;}
+.textnya { display: none;position: absolute;margin-left:0px;height: 160px;color: #1d4289;background: #D4E6F1;font-size: 13px;width: 653px;box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2); z-index: 1;}
+.texthover:hover .textnya { display: block;}
+.kecikan button{width: 55px;background: white;border:1px solid  #D4E6F1;border-radius: 5px;}
+.texthover:hover .kepalamdr { display: block;}
+  /* Dropdown Button */
+
+.dropdown {display: inline-block;min-width:120px;width:100%;}
+.dropdown-list { display: none;position: fixed;margin-left:110px;margin-top:-30px;background-color: #FFFFFF; min-width: 200px;box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2); z-index: 1;}
+.dropdown-list a {padding: 0px 0px;text-decoration: none; display: block;}
+.dropdown:hover .dropdown-list { display:inline-block}
+.dropdown-lista { display: none;margin-left:1px;top:400px;position: absolute;background-color: #f1f1f1; font-size: 12px; width: 100px;box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2); z-index: 1;}
+.dropdown-lista a {text-decoration: none; font-weight: bold;display: block;}
+.dropdown-lista a:hover {background-color:whitesmoke ;text-shadow: 0 0 0.1em #fff, 0 0 1.0em #E5E5FF, 0 0 1.2em #E5E5FF;}
+.dropdown:hover .dropdown-lista { display:inline;}
+.dropdown:hover .dropdown-button { background-color: white;}0
+@keyframes induk { 0%   {background-color:rgba(132, 173, 235, 0.26);}
+50%  {background-color:rgb(255, 255, 255);}
+75% {background-color:rgba(133, 187, 236, 0.322);} 
+100%   {background-color:rgba(132, 173, 235, 0.26);}}
+.induk  {animation-name: induk;animation-duration: 4s;animation-iteration-count: infinite;}
+.bottomblock{background-color:#FFFFFF; overflow: hidden; position: fixed; bottom: 0;width: 100%;}
+.blockerms {position: absolute;width: 100%;height:30px;background: #D4E6F1;bottom: 0;color: #1d4289;font-weight: "bold";}
+.popupformask { position: absolute; width: 50%;overflow: hidden; height: 100%;bottom: 0px;}
+.framefaq {width: 100%;overflow: hidden; height: 100%;}
+.satable,.satable td { border: 1px solid black; }
+.satable { width: 100%; border-collapse: collapse;font-size: 13px }
+.popupform {position: absolute;width: 400px;height: 600px;top: 0px;right: 0px;box-shadow: 0px 36px 36px 0px rgba(0, 0, 1, 0.5)}
+    /* progresss bar saja bapak panjang */  
+.progress {position:absolute; top: 2px; right: 250px;height: 15px;display: block; width: 200px;background-color: white;border-radius: 2px;background-clip: padding-box;
+  /*margin: 0.5rem 0 1rem 0;*/
+  overflow: hidden;}
+.progress .indeterminate {background-color:black; }
+.progress .indeterminate:before {content: ''; position: absolute; background-color: #2C67B1; top: 0;left: 0; bottom: 0; will-change: left, right;
+  -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite; }
+.progress .indeterminate:after {content: '';position: absolute;background-color: #2C67B1; top: 0; left: 0;bottom: 0;will-change: left, right;-webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+          animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;-webkit-animation-delay: 1.15s;animation-delay: 1.15s; }
+@-webkit-keyframes indeterminate {0% {left: -35%;right: 100%; }60% {left: 100%;right: -90%; }100% { left: 100%;right: -90%; } }
+@keyframes indeterminate  {0% {left: -35%;right: 100%; }60% {left: 100%;right: -90%; }100% { left: 100%;right: -90%; } }
+@-webkit-keyframes indeterminate-short { 0% {left: -200%;right: 100%; } 60% {left: 107%;right: -8%; }100% {left: 107%;right: -8%; } }
+@keyframes indeterminate-short { 0% { left: -200%;right: 100%; } 60% {left: 107%;right: -8%; } 100% {left: 107%;right: -8%; } }
+.kira {width: -webkit-calc(100% - 112px);width:    -moz-calc(100% - 112px);
+  width: calc(100% - 112px);position:absolute;float:right;width:calc(100%-112px);
+  overflow: hidden;height:99%;top:0px;left:111px;border-left:solid 1px #1c468685;}
+.kirakiri {vertical-align:top;text-align: left;float:left;width: 110px;height:99%;border-right:solid 1px #f2f4f785;}
+.buten {color: white;font-size: 14px; font-weight: bold; text-align: center ; text-decoration: none;padding: 0px 1px; 
+  width:88px;cursor: pointer;border: 0px solid;border-bottom: 0px solid ;background: none;height:30PX;}
+.buten:hover { text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #0000FF,0 0 0.6em #E5E5FF, 0 0 0.8em #E5E5FF, 0 0 1.0em #E5E5FF, 0 0 1.2em #E5E5FF; color: #fff;} 
+.embed{width:620px;height:1100px;margin-top:30px;zoom: 0.80;-moz-transform: scale(0.80);-moz-transform-origin: 0 0;-o-transform: scale(0.80);-o-transform-origin: 0 0;-webkit-transform: scale(0.80);-webkit-transform-origin: 0 0;}
+
+  .padu2 { width: 100%; height:80px; top: 40px;}
+  .but1  {color: white; font-size: 14px; font-weight: bold; text-align: center ; text-decoration: none;padding: 0px 1px; 
+     width:100%;cursor: pointer;border: 0px solid;border-bottom: 0px solid ;background: none;height: 100%;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+  .but1:hover { text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #0000FF,0 0 0.6em #E5E5FF, 0 0 0.8em #E5E5FF, 0 0 1.0em #E5E5FF, 0 0 1.2em #E5E5FF; color: #fff;} 
+  .but1:active{background:#132e61;}    
+   xtable.utama    {border-collapse: collapse;height:110px; width: calc(100% - 270px); width: -webkit-calc(100% - 270px);width:    -moz-calc(100% - 270px)}
+   table.utama     {border-collapse: collapse;height:80px; width: 100%;background:#1d4389d2}
+   table.utama td  {padding: 2px 3px;height: 50%;width:11% ;background:#1d43898a }
+  .framenews{margin:20px 20px;color: #1d4289;font-size: 14px;height: calc(100% - 170px);width: calc(100% - 40px);
+border-radius: 15px;box-shadow:  5px 5px 10px #8a969dbe,-5px -5px 10px #ffffffa2; overflow: scroll;
+  -ms-overflow-style: none;}
+
+.sakau{background-color:white;width: 100%;padding-top: 56.25%; /* 1:1 Aspect Ratio */position: relative; /* If you want text inside of it */
+}
+/* If you want text inside of the container */
+.frame901 { position: absolute; top: 0; left: 0; bottom: 0; right: 0;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+function callnum()
+{var queryStr = window.location.search;var paramPairs = queryStr.substr(1).split('&');var params = {};
+for (var i = 0; i < paramPairs.length; i++) {var parts = paramPairs[i].split('=');params[parts[0]] = parts[1];};
+sndReq(params.sndReq);
+return show('samp','home')}
+
+function showp(shown, hidden) {
+  document.getElementById('decx').src ="asset/back.html";
+  document.getElementById('major').style.display = 'none';
+  document.getElementById(shown).style.display = 'block';
+document.getElementById(hidden).style.display = 'none';return false;
+
+}
+
+function fullscreen() {document.documentElement.requestFullscreen()}
+function nono() {document.documentElement.bac()}
+function xfullscreen() {document.exitFullscreen()}
+function show(shown, hidden) 
+{document.getElementById(shown).style.display = 'block';
+document.getElementById('major').style.display = 'block';
+document.getElementById(hidden).style.display = 'none';return false;}
+function greeds()     {alert("Hello! Welcome to PMQC E-Book")}
+function pinjam()     {
+  bukarequest();formms() ;
+}
+function tutupform()     {
+  document.getElementById('pop').style.display = 'none'; 
+  document.getElementById('framepop').src="";
+}
+function bukarequest(){document.getElementById('pop').style.display = 'block'; }
+function formms()     {document.getElementById('framepop').src ='https://forms.office.com/Pages/ResponsePage.aspx?id=p_V1Q15PJkWS72eJ84XwPUs3q1a1BiVLiec-7E5IHXJUNzQyTjc4NEs3TUpXUFVWQkdKU0ZMNVAyMC4u&embed=true';}
+function decapp()     {document.getElementById('decx').src ='https://apps.powerapps.com/play/7ae8c539-0bb1-465c-b530-46ecdd0ab393?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d'}
+function pmeapp()     {document.getElementById('decx').src ='https://apps.powerapps.com/play/344d6c88-145a-4937-b057-2412638d11be?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d?'}
+function artapp()     {document.getElementById('artid').src ='https://apps.powerapps.com/play/8c54b647-1b03-468b-90b0-b6ec44423e52?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d'}
+function swayapp()    {document.getElementById('sway').src ='https://sway.office.com/s/U30Zi6yVOYpU347p/embed';document.getElementById('tutup').src ='24. EBOOK\img\nocheat.jpg';}
+function declare()    {decapp();return show('dec','home');}
+function pmett()      {pmeapp();return show('dec','home');}
+function ubah()       {swayapp();return show('swayd','gambar');}
+function launchart()  {artapp();return show('as','home');}
+function ubahVID()    {document.getElementById('framevideo').src = '';} 
+ </script>
+</head>
+<body>
+
+<!-----------------main tempat-->
+<div id="major" class="kira"  style="display:none">
+  <div class="sakau">
+    <iframe id="decx" class="frame901" name="framefull" frameborder="0" width="100%"  height="100%" src="asset/back.html"></iframe>
+  </div>
+</div>
+  <img  style="height: 25px;position:absolute;top: 7px;left:30px ;"   src="asset/tgicon.png" alt="">
+
+ <!------------------------------------------------------------------begin---------------------------------------------------------->
+
+<!------  home Page start ------------------------------------------------------------------------------------>
+  <div id="home">
+
+<style>
+
+
+.bgblue{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    overflow: hidden;
+    background: url('asset/tran.gif') repeat;
+    background-size: 14.285%;
+    opacity: 0.1;
+
+}
+.padu {width: 100%;top: 0px;height: 40px;background-color: #ffffff;}
+
+</style>
+<!---\\background-image: url('asset/tran.gif');background-repeat:repeat;opacity: 0.1;-background-color: rgba(234, 243, 248,0.5);----->
+<div class="bgblue" ></div>
+
+
+
+  <!------ sakau------------------------------------------------------------------------------------>
+<div id="enqnow" style="z-index:10;display:none;position:absolute;top:0px;right:0px;width:400px;height:678px;box-shadow: 0px 36px 36px 0px rgba(0, 0, 1, 0.5);background: #1d4289;overflow: hidden;">
+ <div  style="position:absolute;width:370px;height:32px;"> 
+ <a href="https://web.yammer.com/embed/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI5MTI0NzA5MTcxMiJ9?header=false&footer=true&theme=light&promptText=Ask%20PMQC%20here"  target="framebaru"><button class="buten">COMMUNITY           </button>  </a>
+ <a href="https://apps.powerapps.com/play/43438e69-7203-463d-ac8f-52b43db46252?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d" target="framebaru"> <button class="buten">HELPDESK              </button>  </a> 
+ <a href="https://outlook.office365.com/owa/calendar/PMQCSupport@topglove.onmicrosoft.com/bookings/" target="framebaru">                          <button class="buten">BOOKING              </button>  </a>
+  <a href="#" onclick="return showp('home','enqnow')"> <button class="buten" style="width:60px">CLOSE</button>  </a>
+ </div>
+ <iframe class="embed" src="" frameborder="0" name="framebaru" ></iframe>
+ 
+</div>
+   <!------pale----------------------------------------------------------------------------------->
+ <span class="pmqc"  style="position: absolute;top: 17px;right: 100px;z-index: 2;" >Press <button >F11</button> Fullscreen/Exit</span>
+<a href="#" onclick="return showp('enqnow','xxxx')"  ><span style="position: absolute;top: 0;right: 2;text-align: right; font-size: 30px;cursor: pointer;"> &#x2261;  </span></a>
+
+ <div class="padu">
+   <img src="asset/pmqcicon.ico" style="height: 36px;position:absolute;left:120px;top:2px" alt="Be Honest, No Cheating!">
+   <span style="position:absolute;top: 3px;left: 160px;color: #1d4289; font-size: 25px;text-shadow: 2px 3px rgb(0 0 1 / 10%);font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+    <strong>PMQC E-BOOK</strong> </span>
+ </div>
+  <!------ pale----------------------------------------------------------------------------------->
+
+<div id="enqbut" style="display:none;position:absolute;bottom: 10px;right:0px;width:50px;height:50px">
+<a href="#" onclick="return show('enqnow','enqbut')"><button class="but1" >?</button></a><br>
+</div>
+
+<div class="padu2 ">
+ <table class="utama" ><tr>
+
+   <td><a href="#" onclick="return show('insp','home')"><button class="but1">  INSPECTIONS  </button></a></td>
+   <td><a href="#" onclick="return show('form','home')"><button class="but1">  FORMS    </button></a></td>
+   <td><a href="#" onclick="return show('ms','home')">  <button class="but1">  MASTER SAMPLES  </button></a></td>
+   <td><a href="#" onclick="return show('artw','home')"><button class="but1">  MASTER ARTWORK  </button></a></td>
+   <td><a href="#" onclick="pmett()"> <button class="but1">  EVALUATION   </button></a></td>
+   <td> <a href="#" onclick="return show('purc','home')"><button class="but1">  PURCHASING   </button></a></td>
+   <td><a href="#" onclick="return show('link','home')"><button class="but1">  LINK & OTHER  </button></a></td>
+</tr>
+<tr>
+  <td><a href="#" onclick="return show('guid','home')"><button class="but1">  GUIDES     </button></a></td>
+<td><a href="#" onclick="return show('gale','home')"><button class="but1">  GALERY       </button></a></td>
+  <td><a href="#" onclick="return show('mdr','home')"> <button class="but1">  MDR & UDI         </button></a></td>
+   <td><a href="#" onclick="launchart()">  <button class="but1">  ARTWORK SCANNER  </button></a></td>
+
+   <td><a href="#" onclick="declare()"> <button class="but1"> DECLARATION   </button></a></td>
+   <td><a href="#" onclick="return show('analysis','home')"> <button class="but1">  ANALYSIS   </button></a></td>
+   <td><a href="#" ><button class="but1">       </button></a></td>
+</tr>
+</table>
+</div>
+  <iframe  id="sway"  src="asset/News.html" class="framenews" name="sakau" style="background-color: #FFFFFF;"></iframe>
+  <a href="http://172.16.10.202/qa_pmqc/link.html" target="sakau"><span style="position: absolute;bottom: 10px;left: 5px;">-</span></a>    
+</div>
+
+  <!  iNSPECTION--------------------------------------------------------------------------------------------->
+  <div id="insp" style="display:none">
+<div class="kirakiri">
+<a href="#" onclick="return showp('home','insp')">
+  <button class="backbutton">&#10096;</button></a>
+<br><br><span class="tajuk">INSPECTIONS</span>
+
+      <div class="dropdown"><button class="tema button2">1.FLOW</button>
+        <div class="dropdown-list"> <a href="asset/Apx-04 GL PMQ P01.pdf" target="framefull"><button class="tema button2">1.IPM INSPECTION FLOW</button></a>
+                                    <a href="asset/Apx-05 GL PMQ P01.pdf" target="framefull"><button class="tema button2">2.PM PROCESS FLOW(SAP)</button></a>
+                                    <a href="asset/Apx-04 CD PMQ P01.pdf" target="framefull"><button class="tema button2">3.PM PROCESS FLOW (MANUAL)</button></a>
+        </div></div><div class="dropdown"><button class="tema button2">2.DOCUMENTS</button>
+          <div class="dropdown-list">
+          <a href="asset/Document_Inspection.pdf" target="framefull">                    <button class="tema button2">1.DOCUMENTS FOR INSPECTIONS</button></a>
+          <a href="asset/Packaging Material Defect Description.pdf" target="framefull">  <button class="tema button2">2.DEFECT DESCRIPTION</button></a>
+           </div> </div>
+      <div class="dropdown"><button class="tema button2"> 3.PROCEDURES</button>
+        <div class="dropdown-list">
+          <a href="asset/GL PMQ P01 Acceptance of Incoming Packaging Materials 1.1 Published.pdf" target="framefull">  <button class="tema button2">1.GL PMQ P01:ACCEPTANCE OF IPM</button></a>
+          <a href="asset/GL PMQ M01 Incoming Packaging Materials Method 1.0 Original 28.5.19.pdf" target="framefull">  <button class="tema button2">2.GL PMQ M01:IPM METHOD</button></a>
+          <a href="asset/GL PMQ S01 Packaging Defect Specification 1.0 Published.pdf" target="framefull">              <button class="tema button2">3.GL PMQ S01:PM DEFECT SPEC.</button></a>
+          <a href="asset/DD PMQC P01.pdf" target="framefull">                                                          <button class="tema button2">4.DD PMQC P01:ACCEPTANCE (DURA)</button></a>
+          <a href="asset/CD PMQ P01.pdf" target="framefull">                                                           <button class="tema button2">5.CD PMQ P01:ACCEPTANCE (CD)</button></a>
+        </div>
+      </div>
+      <div class="dropdown"><button class="tema button2"> <span>4.METHOD</span></button>
+        <div class="dropdown-list" style="width:400px">
+          <DIV style="width:200px;float:left">
+            <a href="24. EBOOK\html\i1.html" target="framefull">                                            <button class="tema button2">1 .BARCODE SCAN TEST</button></a>
+            <a href="24. EBOOK\html\i2.html" target="framefull">                                            <button class="tema button2">2 .WINDOW PERFORATION</button></a>
+            <a href="24. EBOOK\html\i3.html" target="framefull">                                            <button class="tema button2">3 .GRAIN DIRECTION TEST</button></a>
+            <a href="24. EBOOK\html\i4.html" target="framefull">                                            <button class="tema button2">4 .RUBBING TEST</button></a>
+            <a href="24. EBOOK\html\i4b.html" target="framefull">                                           <button class="tema button2">4b.RUBBING TEST MACHINE</button></a>
+            <a href="24. EBOOK\html\i5.html" target="framefull">                                            <button class="tema button2">5 .FITTING TEST</button></a>
+            <a href="24. EBOOK\html\i6.html" target="framefull">                                            <button class="tema button2">6 .DYE SOLUTION PREPARATION</button></a>
+            <a href="24. EBOOK\html\i7.html" target="framefull">                                            <button class="tema button2">7 .DYE LEAK TEST</button></a>
+            <a href="24. EBOOK\html\i8A.html" target="framefull">                                           <button class="tema button2">8a.DIMENSION CARTON</button></a>
+          </DIV><DIV style="width:200px;float:right"><a href="24. EBOOK\html\i8B.html" target="framefull">  <button class="tema button2">8b.DIMENSION INNER</button></a>
+            <a href="24. EBOOK\html\i9.html" target="framefull">                                            <button class="tema button2">9 .GSM FOR CARTON</button></a>
+            <a href="24. EBOOK\html\i10.html" target="framefull">                                           <button class="tema button2">10.GSM FOR INNER</button></a>
+            <a href="24. EBOOK\html\i11.html" target="framefull">                                           <button class="tema button2">11.VISUAL INSPECTION</button></a>
+            <a href="24. EBOOK\html\i12.html" target="framefull">                                           <button class="tema button2">12.VISUAL FOR POLYBAG</button></a>
+            <a href="24. EBOOK\html\i13.html" target="framefull">                                           <button class="tema button2">13.PAPER DUST INSPECTION</button></a>
+            <a href="24. EBOOK\html\i14.html" target="framefull">                                           <button class="tema button2">14.UI SHEET INSPECTION</button></a>
+            <a href="24. EBOOK\html\i15.html" target="framefull">                                           <button class="tema button2">15.STICKER INSPECTION</button></a>
+          </DIV>
+        </div>
+      </div>
+<a href="asset/sampling.html" target="framefull">    <button class="tema button2"><span>5.SAMPLING</span></button> </a>
+      <div id="simpan" style="display:none">
+        <div class="dropdown"><button class="tema button2"> <span>&nbsp;OTHER INSPECTIONS</span></button>
+          <div class="dropdown-list">
+            <a href="24. EBOOK\html\16.html" target="framefull"><span class="nombor">16</span><span>&nbsp;FLAT CRUSH TEST</span></a>
+            <a href="24. EBOOK\html\17.html" target="framefull"><span class="nombor">17</span><span>&nbsp;STACKING TEST</span></a>
+            <a href="24. EBOOK\html\18.html" target="framefull"><span class="nombor">18</span><span>&nbsp;PAPER BURST TEST</span></a>
+            <a href="24. EBOOK\html\19.html" target="framefull"><span class="nombor">19</span><span>&nbsp;PIN ADHESION TEST</span></a>
+            <a href="24. EBOOK\html\20.html" target="framefull"><span class="nombor">20</span><span>&nbsp;VIBRATION TEST</span></a>
+            <a href="24. EBOOK\html\21.html" target="framefull"><span class="nombor">21</span><span>&nbsp;DROP TEST</span></a>
+            <a href="24. EBOOK\html\22.html" target="framefull"><span class="nombor">22</span><span>&nbsp;WATER LEAK TEST</span></a>
+            <a href="24. EBOOK\html\23.html" target="framefull"><span class="nombor">23</span><span>&nbsp;COLOUR BLIND TEST</span></a>
+            <a href="24. EBOOK\html\24.html" target="framefull"><span class="nombor">24</span><span>&nbsp;COLOR GUIDE</span></a>
+            <a href="24. EBOOK\html\25.html" target="framefull"><span class="nombor">25</span><span>&nbsp;ECT (EDGE CRUSH TEST)</span></a>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <span class="tajuk">LABELING</span>
+      <div class="dropdown"><button class="tema button2">6.FDA</button>
+        <div class="dropdown-list">
+          <a href="asset/FDA_Labelling.pdf" target="framefull"> <button class="tema button2">1.GUIDELINE</button></a>
+          <a href="24. EBOOK\html\FDA.html" target="framefull"><button class="tema button2">2.EMAIL TEMPLATE</button></a>
+        </div>
+      </div>
+      <div class="dropdown"><button class="tema button2">7.FOOD LOGO</button>
+        <div class="dropdown-list">
+          <a href="asset/Food Handling Logo.pdf" target="framefull"><button class="tema button2">1.FOOD HANDLING</button></a>
+          <a href="24. EBOOK\html\Food_template.html" target="framefull"> <button class="tema button2">2.EMAIL TEMPLATE</button></a>
+        </div>
+      </div>
+      <a href="asset/PPE REGULATION_2019.pdf" target="framefull"><button class="tema button2">8.PPE</button></a>
+      <a href="asset/WI_palm.pdf" target="framefull"><button class="tema button2"> 9.PALM WIDTH</button></a>
+      <a href="24. EBOOK\html\checklist.html"     target="framefull"><button class="tema button2">10.CHECKLIST</button></a>
+      <a href="24. EBOOK\html\checklist_sur.html" target="framefull"><button class="tema button2">11.CHECKLIST SUR.</button></a>
+
+    </div></div>
+
+<!  Guide----------------------------------------------------------------------------------------------------------->
+<div id="guid" style="display:none">
+    <div class="kirakiri">
+      <a href="#" onclick="return showp('home','guid')">
+        <button class="backbutton">&#10096;</button></a>
+      <br><br><span class="tajuk">GUIDE</span>
+
+<a href="asset/Apx-04 GL PMQ P01.pdf" target="framefull"> <button class="tema button2">1.IPM FLOW</button></a><br>
+<div class="dropdown"><button class="tema button2">2.NCAS</button>
+  <div class="dropdown-list">
+    <a href="asset/NCAS_joget_flow.pdf" target="framefull"> <button class="tema button2">1.FLOW</button></a>
+    <a href="asset/Guideline of NCAS issuance using JOGET_IPM inspector.pdf" target="framefull"><button class="tema button2">2.ISSUANCE</button></a>
+    <a href="asset/Guideline of NCAS verification using JOGET_PM purchaser.pdf" target="framefull"><button class="tema button2">3.VERIFICATION(PURCHASER)</button></a>
+    <a href="https://workflow.topglove.com:10443/jw/web/userview/qa_ncas/ncas_qa/_/welcome" target="framefull"><button class="tema button2">4.APPS(Run here) <img src="asset/jogeticon.png" height="20px" style="display: block;float: right;"/></button></a>
+  </div> </div>
+
+  <a href="asset/IRF_template.pdf" target="framefull"> <button class="tema button2">3.IRF</button></a><br>
+
+<div class="dropdown"><button class="tema button2">4.LOC</button>
+  <div class="dropdown-list">
+    <a href="asset/LOC guideline Latest.pdf" target="framefull"> <button class="tema button2">1.PM LOCGUIDELINE</button></a>
+    <a href="asset/TG LOC SAP JOGET system.pdf" target="framefull"> <button class="tema button2">2.JOGET & SAP ISSUANCE</button></a>
+    <a href="asset/loc_all.pdf"  target="framefull"> <button class="tema button2">3.JOGET & SAP ISSUANCE(PM)</button></a>
+    <a href="asset/TG LOC SAP JOGET system - APPROVER LEVEL.pdf" target="framefull"> <button class="tema button2">4.JOGET & SAP LOC APPROVER</button></a>
+    <a href="asset/QA PQC S03 Packing Defect - CTRL.pdf" target="framefull"> <button class="tema button2">5.DEFECT SPEC. (CTRL DOC.)</button></a>
+    <a href="\\172.16.10.60\QA\QA PMQC\1. Training & Development\1. Training Slide\FY2021\Oct'21\LOC Guideline.pdf" target="framefull"> <button class="tema button2">7.TRAINING SLIDE</button></a>
+    <a href="https://workflow.topglove.com:10443/jw/web/userview/vendorRegisteration/vendorRegister/_/welcome" target="framefull"> <button class="tema button2">8.VENDOR REG.(Run here) <img src="asset/jogeticon.png" height="20px" style="display: block;float: right;"/> </button></a>
+    <a href="https://workflow.topglove.com:10443/jw/web/userview/SAPLOC/v/_/welcome" target="framefull"> <button class="tema button2">9.JOGET (Run here) 
+      <img src="asset/jogeticon.png" height="20px" style="display: block;float: right;"/> </button></a>
+  </div> </div>
+      <div class="dropdown"><button class="tema button2">5.SAP</button>
+        <div class="dropdown-list">
+          <a href="asset/Apx-05 GL PMQ P01.pdf"       target="framefull"> <button class="tema button2">1.PROCESS FLOW</button></a>
+          <a href="asset/SAP_pro.pdf"                 target="framefull"> <button class="tema button2">2.WI SAP & GUIDELINE</button></a>
+          <a href="asset/SAP_attach.pdf"              target="framefull"> <button class="tema button2">3.WI ATTACH PICTURE</button></a>
+          <a href="asset/SAP_tag.pdf"                 target="framefull"> <button class="tema button2">4.WI PRINT DISPO.TAG</button></a>
+          <a href="asset/TG LOC SAP JOGET system.pdf" target="framefull"> <button class="tema button2">5.WI SAP/JOGET LOC ISSUANCE</button></a>
+          <a href="sap_result.html" target="framefull"> <button class="tema button2">1.RECORDING TEMPLATE</button></a>
+        </div> </div>
+<div class="dropdown"><button class="tema button2">6.MAS.SAMPLE</button>
+  <div class="dropdown-list">
+    <a href="asset/msflow.pdf"               target="framefull"> <button class="tema button2">1.FLOW MS</button></a>
+    <a href="asset/msguide.pdf"              target="framefull"> <button class="tema button2">2.REGISTER MS</button></a>
+    <a href="asset/mswi.pdf"                 target="framefull"> <button class="tema button2">3.PREPARATION  WI</button></a>
+    <a href="asset/msreq.pdf"                target="framefull"> <button class="tema button2">4.VERIFICATION   WI</button></a>
+    <a href="asset/Guideline_request_ms.pdf" target="framefull"> <button class="tema button2">5.REQUEST MS</button></a>
+    <a href="24. EBOOK\VIDEO\FINAL_WI_SAP_MS.mp4"    target="framefull"> <button class="tema button2">6.CHECK VS. SAP VIDEO</button></a>
+    <a href="24. EBOOK\html\mshome.html" target="framefull"> 
+      <button class="tema button2">7.ALL LOG DASHBOARD <img src="asset/excelicon.ico" height="20px" style="display: block;float: right;"/></button></a>
+  </div> </div>
+
+      <div class="dropdown"><button class="tema button2">7.BCT</button>
+        <div class="dropdown-list">
+          <a href="asset/bctoverview.pdf"   target="framefull"> <button class="tema button2">1.OVERVIEW</button></a>
+          <a href="24. EBOOK\html\bct_sche.html"  target="framefull"> <button class="tema button2">2.SUBMISSION SCHEDULE</button></a>
+          <a href="asset/BCT_examplereminder.pdf"   target="framefull"> <button class="tema button2">3.EMAIL REMINDER</button></a>
+          <a href="24. EBOOK\html\BCT_flow.html"  target="framefull"> <button class="tema button2">4.PREPARATION FLOW</button></a>
+          <a href="24. EBOOK\html\BCTlabel.html"  target="framefull"> <button class="tema button2">5.PARCEL LABEL</button></a>
+          <a href="https://forms.office.com/r/uL3FZBhQVD"  target="framefull"> <button class="tema button2">6.SUBMISSION FORM <img src="asset/msformicon.ico" height="20px" style="display: block;float: right;"/></button></a>
+          <a href="asset/BCTemailexample.pdf"   target="framefull"> <button class="tema button2">7.EMAIL RECEIPT</button></a>
+          <a href="asset/BCTdispo.pdf"  target="framefull"> <button class="tema button2">8.NEXT STEP</button></a>
+          <a href="https://topglove-my.sharepoint.com/personal/azraful_topglove_com_my/_layouts/15/Doc.aspx?sourcedoc={7c646671-5a12-46c1-9040-d1ca133f3635}&amp;action=embedview&amp;wdAllowInteractivity=False&amp;Item='Sheet2'!A1%3ABB32&amp;wdInConfigurator=True" target="framefull"> 
+            <button class="tema button2">9.SUBMISSION SUMMARY <img src="asset/excelicon.ico" height="20px" style="display: block;float: right;"/></button></a>
+        </div> </div>
+      <a href="asset/artwork_directory.pdf" target="framefull"> <button class="tema button2">8.ARTWORK</button></a><br>
+
+      <a href="asset/E Deviation User Guide 24102019.pdf" target="framefull"> <button class="tema button2">9.E DEVIATION</button></a><br>
+      <a href="asset/Blind_test.pdf" target="framefull"> <button class="tema button2">10.BLIND TEST</button></a><br>
+      <a href="24. EBOOK\html\barcode_sample.html" target="framefull"> <button class="tema button2">11.BARCODE TYPE</button></a><br>
+      <a href="asset/Flow chart Packaging Material STO.pdf" target="framefull"><button class="tema button2">12.S.T.O.</button></a><br>
+      <a href="asset/Guideline_Microsoft_Edge.pdf" target="framefull"> <button class="tema button2">13.EDGE BROWSER</button></a><br>
+</div></div>
+
+<! form--------------------------------------------------------------------------------------->
+<div id="form" style="display:none">
+  <div class="kirakiri">
+    <a href="#" onclick="return showp('home','form')">
+      <button class="backbutton">&#10096;</button></a>
+    <br><br><span class="tajuk">FORM</span>
+<!---------------------
+  <img src="asset/jogeticon.png" height="20px" style="display: block;float: right;"/>
+  <img src="asset/jogeticon.png" height="20px" style="display: block;float: right;"/>
+  https://workflow.topglove.com:10443/jw/web/userview/qualityAssurance/qualityAssurance/_/welcome
+    https://make.powerapps.com/favicon.ico
+    https://forms.office.com/cdn/images/favicon.ico
+    https://c1-excel-15.cdn.office.net/x/_layouts/resources/FavIcon_Excel.ico
+    https://www.xrite.com/-/media/xrite/images/default-site-images/icons/favicon.ico
+  ----------------->
+
+<div class="dropdown"><button class="tema button2">1.ATTENDANCE</button><div class="dropdown-list">
+<a href="https://forms.office.com/r/Ht9ZLfkJJN" target="framefull"> <button class="tema button2">1.TRAINING ATTENDANCE
+<img src="asset/msformicon.ico" height="20px" style="display: block;float: right;"/></button></a>
+<a href="http://172.16.10.202/qa_pmqc/attendance.html
+" target="framefull"> <button class="tema button2">2.TRAINING ATTENDANCE LOG
+  <img src="asset/excelicon.ico" height="20px" style="display: block;float: right;"/></button></a>
+</div> </div>
+<div class="dropdown"><button class="tema button2">2.TEST PAPER</button><div class="dropdown-list">
+  <a href="https://forms.office.com/r/sP3eRRcZPM" target="framefull"> <button class="tema button2">1.MONTHLY
+  <img src="asset/msformicon.ico" height="20px" style="display: block;float: right;"/></button></a>
+  <a href="asset/ajaxni.txt" target="framefull"> <button class="tema button2">2.ANNUAL (N/A)
+    </button></a>
+    <a href="https://apps.powerapps.com/play/7ae8c539-0bb1-465c-b530-46ecdd0ab393?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d&p=rep&hideNavBar=true" target="framefull"> <button class="tema button2">3.REPORT
+      <img src="asset/powerappicon.ico" height="20px" style="display: block;float: right;"/></button></a>
+  </div> </div>
+<div class="dropdown"><button class="tema button2">3.BCT REQUEST</button><div class="dropdown-list">
+  <a href="https://forms.office.com/r/uL3FZBhQVD" target="framefull"> <button class="tema button2">1.REQUEST FORM
+  <img src="asset/msformicon.ico" height="20px" style="display: block;float: right;"/></button></a>
+  <a href="24. EBOOK\html\BCTlabel.html"      target="framefull"> <button class="tema button2">2.PARCEL TEMPLATE</button></a>
+  </div> </div>
+  <div class="dropdown"><button class="tema button2">4.ARTWORK</button><div class="dropdown-list">
+    <a href="https://forms.office.com/r/mNY5XQHz6G" target="framefull"> <button class="tema button2">1.INSPECTION REQUEST
+    <img src="asset/msformicon.ico" height="20px" style="display: block;float: right;"/></button></a>
+    </div> </div>
+<div class="dropdown"><button class="tema button2">5.NCAS</button><div class="dropdown-list">
+  <a href="https://workflow.topglove.com:10443/jw/web/userview/qa_ncas/ncas_qa/_/welcome"  target="framefull"> <button class="tema button2">RUN HERE <img src="asset/jogeticon.png" height="20px" style="display: block;float: right;"/></button></a>
+  <a href="https://workflow.topglove.com:10443/jw/web/userview/qa_ncas/ncas_qa/_/welcome"  target="_blank"> <button class="tema button2">NEW TAB<img src="asset/jogeticon.png" height="20px" style="display: block;float: right;"/></button></a>
+</div> </div>
+
+<div class="dropdown"><button class="tema button2">6.LOC</button><div class="dropdown-list">
+  <a href="https://workflow.topglove.com:10443/jw/web/userview/SAPLOC/v/_/welcome"  target="framefull"> <button class="tema button2">RUN HERE <img src="asset/jogeticon.png" height="20px" style="display: block;float: right;"/></button></a>
+  <a href="https://workflow.topglove.com:10443/jw/web/userview/SAPLOC/v/_/welcome"  target="_blank"> <button class="tema button2">NEW TAB<img src="asset/jogeticon.png" height="20px" style="display: block;float: right;"/></button></a>
+</div> </div>
+
+<div class="dropdown"><button class="tema button2">7.VENDOR</button><div class="dropdown-list">
+  <a href="https://workflow.topglove.com:10443/jw/web/userview/vendorRegisteration/vendorRegister/_/welcome"  target="framefull"> <button class="tema button2">REGISTER HERE <img src="asset/jogeticon.png" height="20px" style="display: block;float: right;"/></button></a>
+  <a href="https://workflow.topglove.com:10443/jw/web/userview/vendorRegisteration/vendorRegister/_/welcome"  target="_blank"> <button class="tema button2">REGISTER NEW TAB<img src="asset/jogeticon.png" height="20px" style="display: block;float: right;"/></button></a>
+</div> </div>
+
+<div class="dropdown"><button class="tema button2">8.DEVIATION</button><div class="dropdown-list">
+  <a href="https://workflow.topglove.com:10443/jw/web/userview/deviationRForm/deviationForm/_/welcome"  target="framefull"> <button class="tema button2">RUN HERE <img src="asset/jogeticon.png" height="20px" style="display: block;float: right;"/></button></a>
+  <a href="https://workflow.topglove.com:10443/jw/web/userview/deviationRForm/deviationForm/_/welcome"  target="_blank"> <button class="tema button2">NEW TAB<img src="asset/jogeticon.png" height="20px" style="display: block;float: right;"/></button></a>
+</div> </div>
+<div class="dropdown"><button class="tema button2">9.DECLARATION</button><div class="dropdown-list">
+  <a href="https://apps.powerapps.com/play/7ae8c539-0bb1-465c-b530-46ecdd0ab393?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d&p=mis&hideNavBar=true"  target="framefull"> <button class="tema button2">1.IPM MONTHLY MISTAKE<img src="asset/powerappicon.ico" height="20px" style="display: block;float: right;"/></button></a>
+  <a href="https://apps.powerapps.com/play/7ae8c539-0bb1-465c-b530-46ecdd0ab393?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d&p=cal&hideNavBar=true"  target="framefull"> <button class="tema button2">2.EQUIDMENT CALIBRATION<img src="asset/powerappicon.ico" height="20px" style="display: block;float: right;"/></button></a>
+  <a href="https://apps.powerapps.com/play/7ae8c539-0bb1-465c-b530-46ecdd0ab393?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d&p=pic&hideNavBar=true"  target="framefull"> <button class="tema button2">3.P.I.C MASTERDATA<img src="asset/powerappicon.ico" height="20px" style="display: block;float: right;"/></button></a>
+</div> </div>
+
+<div class="dropdown"><button class="tema button2">10.BLIND TEST</button><div class="dropdown-list">
+  <a href="https://www.xrite.com/hue-test"  target="_blank"> <button class="tema button2">1.OPEN TEST<img src="asset/xriteicon.ico" height="20px" style="display: block;float: right;"/></button></a>
+  <a href="https://forms.office.com/r/LQqFiKtz4x"  target="framefull"> <button class="tema button2">2.SUBMIT SCORE<img src="asset/msformicon.ico" height="20px" style="display: block;float: right;"/></button></a>
+</div> </div>
+    <br><br><span class="tajuk">TEMPLATES</span>
+    <a href="asset/IRF_template.pdf" target="framefull"> <button class="tema button2">11.IRF</button></a><br>
+    <a href="24. EBOOK\html\Food_template.html" target="framefull"> <button class="tema button2">12.FOOD LOGO </button></a><br>
+    <a href="24. EBOOK\html\FDA.html"           target="framefull"> <button class="tema button2">13.FDA ALERT </button></a><br>
+    <a href="24. EBOOK\html\sap_result.html"    target="framefull"> <button class="tema button2">14.SAP: RECORDING</button></a><br>
+  </div>
+</div>
+
+<!-----\\172.16.10.183\pmqc-fg01\Video\------->
+<! galery--------------------------------------------------------------------------------------->
+<div id="gale" style="display:none">
+  <div class="kirakiri">
+    <a href="#" onclick="return showp('home','gale')">
+      <button class="backbutton">&#10096;</button></a>
+    <br><br><span class="tajuk">GALLERY</span>
+
+<a href="24. EBOOK/VIDEO/Introduction QAPMQC.mp4" target="framefull"> <button class="tema button2">1.ABOUT</button></a>
+<a href="24. EBOOK/VIDEO/loctraining.html" target="framefull"> <button class="tema button2">2.ALL TRAINING</button></a>
+<a href="24. EBOOK/VIDEO/FINAL_WI_SAP_MS.mp4" target="framefull"> <button class="tema button2">3.MS VS SAP</button></a>
+
+  </div></div>
+
+  <! master sample-------------------------------------------------------------------------->
+<div id="ms" style="display:none">
+  <div class="kirakiri">
+    <a href="#" onclick="return showp('home','ms')">
+      <button class="backbutton">&#10096;</button></a>
+    <br><br><span class="tajuk">MASTER</span><BR><span class="tajuk">SAMPLE</span>
+
+<a href="24. EBOOK\html\mshome.html" target="framefull"> <button class="tema button2">1.DASHBOARD</button></a>
+<div class="dropdown"><button class="tema button2">2.GUIDE</button><div class="dropdown-list">
+
+    <a href="asset/msflow.pdf" target="framefull"><button class="tema button2">1.FLOW</button></a>
+    <a href="asset/msguide.pdf" target="framefull"><button class="tema button2">2.REGISTER</button></a>
+    <a href="asset/mswi.pdf" target="framefull"><button class="tema button2">3.PREPARATION W.I.</button></a>
+    <a href="asset/msreq.pdf" target="framefull"><button class="tema button2">4.VERIFICATION W.I. </button></a>
+    <a href="asset/Guideline_request_ms.pdf" target="framefull"><button class="tema button2">5.M.S. REQUISITION</button></a>
+    <a href="24. EBOOK\VIDEO\FINAL_WI_SAP_MS.mp4" target="framefull"><button class="tema button2">6.CHECK AGAINTS SAP (Video)</button></a>
+ </div> </div>
+
+ <div class="dropdown"><button class="tema button2">3.VIEW LOG</button><div class="dropdown-list" >
+  <!--&#128250;-->
+
+<div style="width:33%;float: left;">
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={10c0d905-6bd2-421b-a7a8-2751e12a71a6}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F2&M9</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={d9e8c33e-a432-4751-8997-032310abc38f}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F3</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={39d3d0fc-a1af-4f58-8f1f-ea3596e8f69b}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F4</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={636db81e-8fdb-44de-acc6-630e12f91baa}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F5</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={54c273b8-4557-4006-a37a-dfd416d91bd9}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F5B</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={a57743db-ed51-459a-b400-4645457686a6}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F5C</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={4ff3ac55-cab3-4001-b151-63ad51fa69fe}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F6</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={4e02aae7-85be-4076-8982-df363cf1424c}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F7</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={aea3ca67-bf35-4e5a-969e-cc316f1eb35c}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F8A</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={1635c0b2-e953-4f39-b6e8-c39199c12c63}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F10</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={019cd8de-5102-4f1b-800f-dfbd17ca17ac}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F11</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={d4a89553-f573-415a-93eb-ad522ecd1097}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F12</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={7f353668-a3b8-4a35-a134-7d1f72eb6c94}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F13</button></a></div><div style="width:33%;float: left;">
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={8fdf5132-b4b9-4734-95e7-dc6198efd82d}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F14</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={67f31e93-4384-417e-a6d5-74db495e3fac}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F18</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={177f11bb-8058-4ac9-a7fe-703103c2a4e5}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F19&20</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={e5d2e5f2-03e7-4460-a26e-39e50d08fb9f}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F21</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={c52a6660-87ea-4421-900c-199f1d6e2e55}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F23</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={29563295-394a-499d-90a7-e3b6d92ec7c1}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F24</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={a357d14c-a50f-4b9b-a5d7-01a218b458c3}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F22&25</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={a1991c7d-5330-4a61-941b-3cc8eb06276b}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; M26</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={d2c76251-9ad0-47f3-b5a2-7e5f3eb023ac}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F27</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={7cdfbad9-cc2d-4e58-abd4-096b9fc641fa}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F29</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={7a001911-e47b-439f-bbb4-6490e55bab26}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F30</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={11aa4cf4-0c48-4da6-8ade-2038c7d98729}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F31</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={d8a44748-bb04-4d66-87a6-7f84d2607793}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F32</button></a></div><div style="width:33%;float: right;">
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={a1d71fbe-f5d0-4cde-bc63-c66688513f21}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F33</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={2da4ab0f-accc-4241-9e00-57e82f7906a1}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F36</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={223c702f-0ff8-47c0-8b18-d7ea37f7649f}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F37</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={61d7c053-10b2-4fbb-b257-209cb1a65d34}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F38</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={b125ad57-7855-466e-94ff-8928eb7988d6}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F40</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={67c3d52e-919a-49b4-82d8-2fde1f0392cc}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AZ400&wdHideGridlines=True&wdInConfigurator=True" target="framefull"><button class="tema button2">&#128250; F41</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={9ace2096-856f-4638-9db8-0c32b9de05d3}&action=embedview&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!A4&Item='MASTER_SAMPLE'!A1%3AAJ400&wdHideGridlines=True&wdInConfigurator=True"target="framefull"><button class="tema button2">&#128250; F39DD</button></a></div>
+
+
+</div> </div>
+
+<div class="dropdown"><button class="tema button2">4.OPEN LOG</button><div class="dropdown-list" >
+  <!-- &#9997;;-->
+
+<div style="width:33%;float: left;">
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={10c0d905-6bd2-421b-a7a8-2751e12a71a6}" target="_blank"><button class="tema button2">&#9997; F2&M9</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={d9e8c33e-a432-4751-8997-032310abc38f}" target="_blank"><button class="tema button2">&#9997; F3</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={39d3d0fc-a1af-4f58-8f1f-ea3596e8f69b}" target="_blank"><button class="tema button2">&#9997; F4</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={636db81e-8fdb-44de-acc6-630e12f91baa}" target="_blank"><button class="tema button2">&#9997; F5</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={54c273b8-4557-4006-a37a-dfd416d91bd9}" target="_blank"><button class="tema button2">&#9997; F5B</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={a57743db-ed51-459a-b400-4645457686a6}" target="_blank"><button class="tema button2">&#9997; F5C</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={4ff3ac55-cab3-4001-b151-63ad51fa69fe}" target="_blank"><button class="tema button2">&#9997; F6</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={4e02aae7-85be-4076-8982-df363cf1424c}" target="_blank"><button class="tema button2">&#9997; F7</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={aea3ca67-bf35-4e5a-969e-cc316f1eb35c}" target="_blank"><button class="tema button2">&#9997; F8A</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={1635c0b2-e953-4f39-b6e8-c39199c12c63}" target="_blank"><button class="tema button2">&#9997; F10</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={019cd8de-5102-4f1b-800f-dfbd17ca17ac}" target="_blank"><button class="tema button2">&#9997; F11</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={d4a89553-f573-415a-93eb-ad522ecd1097}" target="_blank"><button class="tema button2">&#9997; F12</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={7f353668-a3b8-4a35-a134-7d1f72eb6c94}" target="_blank"><button class="tema button2">&#9997; F13</button></a></div><div style="width:33%;float: left;">
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={8fdf5132-b4b9-4734-95e7-dc6198efd82d}" target="_blank"><button class="tema button2">&#9997; F14</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={67f31e93-4384-417e-a6d5-74db495e3fac}" target="_blank"><button class="tema button2">&#9997; F18</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={177f11bb-8058-4ac9-a7fe-703103c2a4e5}" target="_blank"><button class="tema button2">&#9997; F19&20</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={e5d2e5f2-03e7-4460-a26e-39e50d08fb9f}" target="_blank"><button class="tema button2">&#9997; F21</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={c52a6660-87ea-4421-900c-199f1d6e2e55}" target="_blank"><button class="tema button2">&#9997; F23</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={29563295-394a-499d-90a7-e3b6d92ec7c1}" target="_blank"><button class="tema button2">&#9997; F24</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={a357d14c-a50f-4b9b-a5d7-01a218b458c3}" target="_blank"><button class="tema button2">&#9997; F22&25</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={a1991c7d-5330-4a61-941b-3cc8eb06276b}" target="_blank"><button class="tema button2">&#9997; M26</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={d2c76251-9ad0-47f3-b5a2-7e5f3eb023ac}" target="_blank"><button class="tema button2">&#9997; F27</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={7cdfbad9-cc2d-4e58-abd4-096b9fc641fa}" target="_blank"><button class="tema button2">&#9997; F29</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={7a001911-e47b-439f-bbb4-6490e55bab26}" target="_blank"><button class="tema button2">&#9997; F30</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={11aa4cf4-0c48-4da6-8ade-2038c7d98729}" target="_blank"><button class="tema button2">&#9997; F31</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={d8a44748-bb04-4d66-87a6-7f84d2607793}" target="_blank"><button class="tema button2">&#9997; F32</button></a></div><div style="width:33%;float: right;">
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={a1d71fbe-f5d0-4cde-bc63-c66688513f21}" target="_blank"><button class="tema button2">&#9997; F33</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={2da4ab0f-accc-4241-9e00-57e82f7906a1}" target="_blank"><button class="tema button2">&#9997; F36</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={223c702f-0ff8-47c0-8b18-d7ea37f7649f}" target="_blank"><button class="tema button2">&#9997; F37</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={61d7c053-10b2-4fbb-b257-209cb1a65d34}" target="_blank"><button class="tema button2">&#9997; F38</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={b125ad57-7855-466e-94ff-8928eb7988d6}" target="_blank"><button class="tema button2">&#9997; F40</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={67c3d52e-919a-49b4-82d8-2fde1f0392cc}" target="_blank"><button class="tema button2">&#9997; F41</button></a>
+  <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={9ace2096-856f-4638-9db8-0c32b9de05d3}"target="_blank"><button class="tema button2">&#9997; F39DD</button></a></div>
+
+
+</div> </div>
+
+<a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={9b19de36-9a34-470b-ab3b-2d53b3f72062}&action=embedview&wdAllowInteractivity=False&AllowTyping=True&ActiveCell='MASTER_SAMPLE'!C2&Item='MASTER_SAMPLE'!A1%3AU30&wdHideGridlines=True&wdInConfigurator=True" target="framefull"> <button class="tema button2">5.DIRECTORY</button></a>
+<button onclick="pinjam()" class="tema button2" > 6. REQUEST</button>
+
+  </div>
+
+<div class="blockerms">NOTE:Live Log analysis loading speed depent on internet speed & pc performance </div>
+
+ <DIV class="popupform" id="pop" style="display:none">
+<a href="#" onclick="tutupform()"><button class="tema button1" style="float:right;margin-right: 10px;margin-top: 10px;">CLOSE</button></a>
+<iframe id="framepop" name="fff" width="400px" class="countheight" src="" frameborder="0" marginwidth="0" marginheight="0"> </iframe>
+         </DIV>
+     </div>
+
+
+     <! MDR------------------------------------------->
+     <div id="mdr" style="display:none">
+
+      <div class="kirakiri">
+        <a href="#" onclick="return showp('home','gale')">
+          <button class="backbutton">&#10096;</button></a>
+        <br><br><span class="tajuk">GALLERY</span>
+    
+    <a href="24. EBOOK/VIDEO/Introduction QAPMQC.mp4" target="framefull"> <button class="tema button2">1.ABOUT</button></a>
+    <a href="24. EBOOK/VIDEO/Introduction QAPMQC.mp4" target="framefull"> <button class="tema button2">1.ABOUT</button></a>
+    <a href="24. EBOOK/VIDEO/Introduction QAPMQC.mp4" target="framefull"> <button class="tema button2">1.ABOUT</button></a>
+    <a href="24. EBOOK/VIDEO/Introduction QAPMQC.mp4" target="framefull"> <button class="tema button2">1.ABOUT</button></a>
+    <a href="24. EBOOK/VIDEO/Introduction QAPMQC.mp4" target="framefull"> <button class="tema button2">1.ABOUT</button></a>
+    <a href="24. EBOOK/VIDEO/Introduction QAPMQC.mp4" target="framefull"> <button class="tema button2">1.ABOUT</button></a>
+    <a href="24. EBOOK/VIDEO/Introduction QAPMQC.mp4" target="framefull"> <button class="tema button2">1.ABOUT</button></a>
+    <a href="24. EBOOK/VIDEO/Introduction QAPMQC.mp4" target="framefull"> <button class="tema button2">1.ABOUT</button></a>
+    <a href="24. EBOOK/VIDEO/Introduction QAPMQC.mp4" target="framefull"> <button class="tema button2">1.ABOUT</button></a>
+    
+      </div>
+
+
+
+
+
+
+
+
+
+
+         <div style="width:100%">
+           <a href="#" onclick="return showp('home','mdr')"> <button class="backbutton">&#10096;</button></a><img class="kedepan" src="asset/tgicon.png" alt="">
+           <span class="tajuk" style="position: absolute;top:0px;left:180px;">MEDICAL DEVICE REGULATION
+             <div class="texthover"><button class="tema menumdr" style="margin-left:15px;">1. MASTERLIST</button>
+               <div class="textnya" STYLE="height:200px;">
+                 <a href="https://topglove.sharepoint.com/sites/pmqcosc/_layouts/15/Doc.aspx?sourcedoc={f0c4130f-6cfc-4a4f-90cd-f5c7840f4dc8}&action=embedview&AllowTyping=True&Item='MDR_REPORT'!A1%3AAY800&wdInConfigurator=True" target="mdr"><button class="tema menumdr">MDR_REPORT</button></a>&nbsp;MDR REPORT as 18/8/2021<Br>
+                 <a href="https://topglove.sharepoint.com/sites/pmqcosc/_layouts/15/Doc.aspx?sourcedoc={cf588801-6962-4a55-a458-bff52c41489a}&action=embedview&wdAllowInteractivity=False&Item='Duramedical%20Sdn%20Bhd%20(Option%202)'!A1%3AI15&wdHideGridlines=True&wdInConfigurator=True" target="mdr"><button class="tema menumdr">Duramedical</button></a>&nbsp;DURAMEDICAL SDN BHD (OPTION 2) MDR 2017/745<Br>
+                 <a href="https://topglove.sharepoint.com/sites/pmqcosc/_layouts/15/Doc.aspx?sourcedoc={cf588801-6962-4a55-a458-bff52c41489a}&action=embedview&wdAllowInteractivity=False&Item='955100457XXXCC'!A1%3AJ30&wdHideGridlines=True&wdInConfigurator=True" target="mdr"><button class="tema menumdr">955100457XXXCC</button></a>&nbsp;GMP MEDICARE SDN BHD : MDR 2017/745 (OPTION 2) OEMi | 955100457XXXCC<Br>
+                 <a href="https://topglove.sharepoint.com/sites/pmqcosc/_layouts/15/Doc.aspx?sourcedoc={cf588801-6962-4a55-a458-bff52c41489a}&action=embedview&wdAllowInteractivity=False&Item='955100419XXXCC'!A1%3AJ30&wdHideGridlines=True&wdInConfigurator=True" target="mdr"><button class="tema menumdr">955100429XXXCC</button></a>&nbsp;TG MEDICAL SDN BHD : MDR 2017/745 (OPTION 2) OEMi | 955100429XXXCC<Br>
+                 <a href="https://topglove.sharepoint.com/sites/pmqcosc/_layouts/15/Doc.aspx?sourcedoc={cf588801-6962-4a55-a458-bff52c41489a}&action=embedview&wdAllowInteractivity=False&Item='955100429XXXCC'!A1%3AJ90&wdHideGridlines=True&wdInConfigurator=True" target="mdr"><button class="tema menumdr">955100429XXXCC</button></a>&nbsp;TOP GLOVE SDN BHD : MDR 2017/745 (OPTION 2) OEMi | 955100429XXXCC<Br>
+                 <a href="https://topglove.sharepoint.com/sites/pmqcosc/_layouts/15/Doc.aspx?sourcedoc={cf588801-6962-4a55-a458-bff52c41489a}&action=embedview&wdAllowInteractivity=False&Item='955100430XXXCC'!A1%3AJ100&wdHideGridlines=True&wdInConfigurator=True" target="mdr"><button class="tema menumdr">955100430XXXCC</button></a>&nbsp;TOP GLOVE SDN BHD : MDR 2017/745 (OPTION 2) OEMi | 955100430XXXCC<Br>
+                 <a href="https://topglove.sharepoint.com/sites/pmqcosc/_layouts/15/Doc.aspx?sourcedoc={cf588801-6962-4a55-a458-bff52c41489a}&action=embedview&Item='955100431XXXCC'!A1%3AJ60&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True" target="mdr"><button class="tema menumdr">955100431XXXCC</button></a>&nbsp;TOP GLOVE SDN BHD : MDR 2017/745 (OPTION 2) OEMi | 955100431XXXCC<Br>
+
+               </div>
+             </div>
+             <a href="asset/mdr_4.MDR_labeling.pdf" target="mdr"><button class="tema menumdr">2. LABELING</button></a>
+             <a href="24. EBOOK\html\MDR_RA_guideline.HTML" target="mdr"><button class="tema menumdr">3. DEVIATION</button></a>
+             <div class="texthover"><button class="tema menumdr">4. PQC FILES</button>
+               <div class="textnya" STYLE="height:100px;">
+                 <a href="\\172.16.10.60\qa\QA PQC\4) Guidelines\2021-02 MDR Requirement" target="mdr"><button class="tema menumdr">FOLDER</button></a>&nbsp;1. TGNAS Folder <Br>
+                 <a href="https://forms.gle/wwxa58xjEDTetdqG8" target="mdr"><button class="tema menumdr">LOG FORM</button></a>&nbsp;MDR Log : https://forms.gle/wwxa58xjEDTetdqG8<Br>
+               </div>
+             </div>
+           </span>
+         </div>
+         <div style="width:100%">
+           <iframe class="mastersampleframe" src="asset/mdrturkeymemo.pdf" name="mdr"></iframe>
+         </div>
+
+
+
+     </div>
+
+     <! artwork_scanner--------------------------------------------------------------------------------------->
+     <div  id="as" style="display:none">
+       <a href="#" onclick="return show('nak','wrapper')"><button class="pasc" style="position: absolute;top:150px;left:0px;z-index:20;WIDTH:110PX">HIDE</button></a>
+       
+       <div  id="nak" >
+         <a href="#" onclick="return show('wrapper','nak')"><button class="pasc" style="position: absolute;top:150px;left:0px;z-index:99;WIDTH:110PX">SHOW FOLDER</button></a>
+     
+       </div>
+     <style>
+     #wrapper { width: 500px; height: 550px; padding: 0; overflow: hidden;z-index: 10;position: absolute;top: 138px;left:15px;background-color: white; }
+     #scaled-frame { width: 1000px; height: 2000px; border: 0px; }
+     #scaled-frame {zoom: 0.75;-moz-transform: scale(0.75);-moz-transform-origin: 0 0;-o-transform: scale(0.75);-o-transform-origin: 0 0;-webkit-transform: scale(0.75);-webkit-transform-origin: 0 0;}
+     @media screen and (-webkit-min-device-pixel-ratio:0) {
+     #scaled-frame  { zoom: 1;  }}
+     .pasc{margin:10px 10PX;border:0px solid;border-radius: 10px;width:calc(100% - 20px);height:28px;background: linear-gradient(145deg, #daf7ff, #b8d0dd);
+     box-shadow:  5px 5px 10px #9bb0bb,-5px -5px 10px #fdffff; Font-size:10px;font-weight:bold;cursor:pointer;color:#000d4b;}
+  
+   
+     
+     </style>
+     
+     <div id="wrapper" style="display:none"><iframe id="scaled-frame" name="server" src="\\172.16.10.183\pmqc-fg01\Scanned"></iframe></div>
+     
+     <script language="JavaScript">
+     onload = function() {document.server.document.body.style.fontFamily = "Trebuchet MS";}
+     </script>
+     
+     <div class="kirakiri">
+         <a href="#" onclick="return showp('home','as')"><button class="backbutton">&#10096;</button></a><img class="kedepan" src="asset/tgicon.png" alt="">
+         <BR>
+         <a href="https://apps.powerapps.com/play/8c54b647-1b03-468b-90b0-b6ec44423e52?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d" target="asframe"> <button class="pasc"><span>RELOAD APPS </button></a><br>
+         <a href="20. Artwork Scanner Report\Detection_Gallery\DETECTION.html" target="asframe"> <button class="pasc"><span>DETECTION GALLERY </button></a><br>
+     <br><br>    <br><br><br><br><br>
+     </div>
+     <div class="kira">
+     <iframe id="artid" class="frame90" src="" name="asframe" frameborder="0"></iframe>
+     </div>
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div  id="dec" style="display:none"><! declare------------------------------------------->
+
+  <div class="kirakiri">
+    <a href="#" onclick="return showp('home','dec')"><button class="backbutton">&#10096;</button></a><img class="kedepan" src="asset/tgicon.png" alt="HOME">
+    <BR>
+      <div class="letak">
+        <span class="tajuk">PMQC APPS</span>
+      </div>
+
+      <BR>
+
+  <a href="https://apps.powerapps.com/play/7ae8c539-0bb1-465c-b530-46ecdd0ab393?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d&p=mis" target="framefull">
+   <button class="pasc"><span>DECLARE MISTAKE</button></a><br>
+   <a href="https://apps.powerapps.com/play/7ae8c539-0bb1-465c-b530-46ecdd0ab393?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d&p=pic" target="framefull">
+     <button class="pasc"><span>DECLARE P.I.C</button></a><br>
+     <a href="https://apps.powerapps.com/play/7ae8c539-0bb1-465c-b530-46ecdd0ab393?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d&p=cal&screenColor=rgba(72,62,255,1)" target="framefull">
+       <button class="pasc"><span>DECLARE EQUIDMENT</button></a><br>
+       <!-----screenColor=rgba(104,101,171,1)&--->
+   <a href="https://apps.powerapps.com/play/8c54b647-1b03-468b-90b0-b6ec44423e52?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d" target="framefull">
+     <button class="pasc"><span>ART. SCANNER</button></a><br>
+     <a href="https://apps.powerapps.com/play/344d6c88-145a-4937-b057-2412638d11be?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d?" target="framefull">
+       <button class="pasc"><span>PMETTS</button></a><br>
+         <a href="https://web.yammer.com/embed/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI5MTI0NzA5MTcxMiJ9?header=false&footer=true&theme=light&promptText=Ask%20PMQC%20here" target="framefull">
+           <button class="pasc"><span>COMMUNITY</button></a><br>
+           <a href="https://apps.powerapps.com/play/43438e69-7203-463d-ac8f-52b43db46252?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d" target="framefull">
+             <button class="pasc"><span>HELPDESK</button></a><br>   
+                <a href="https://outlook.office365.com/owa/calendar/PMQCSupport@topglove.onmicrosoft.com/bookings/" target="framefull">
+                  <button class="pasc"><span>APPOINTMENT</button></a><br>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="analysis" style="display:none"><! analysis----------------------------------------------------------------------------->
+
+<div class="kirakiri">
+<a href="#" onclick="return showp('home','analysis')"><button class="backbutton">&#10096;</button></a><img class="kedepan" src="asset/tgicon.png" alt="">
+      <div class="letak"><span class="tajuk">ANALYSIS </span></div>  
+<a href="\\tg-nas01\QA\QA PMQC\8. Inspection Log\Summary" target="analframe"><button class="tema button2">1. under development</button></a> <br>
+<a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={934318f8-6bd2-4979-923a-0f7cc3c878d9}&action=embedview&wdAllowInteractivity=False&Item=Table1&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True" target="analframe"><button class="tema button2">2. Blind Test Result</button></a> <br>
+<a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={934318f8-6bd2-4979-923a-0f7cc3c878d9}&action=embedview&Item=Table2&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True" target="analframe"><button class="tema button2">3. Result Test Jan2022</button></a> <br>
+</div>
+<div class="kira"><iframe class="frame90" src="" name="analframe" frameborder="0"></iframe></div>
+
+</div>
+<div id="pme" style="display:none"><!  EVALUATION------------------------------------------------------------------------------->
+
+<div style="width:100%">
+      <a href="#" onclick="return showp('home','pme')"> <button class="backbutton">&#10096;</button></a><img class="kedepan" src="asset/tgicon.png" alt="">
+      <span class="tajuk" style="position: absolute;top:0px;left:180px;">PM EVALUATION
+        <a href="https://topglove-my.sharepoint.com/:x:/r/personal/noorziella_topglove_com_my/_layouts/15/Doc.aspx?sourcedoc=%7Baf1bbe86-7074-4ec4-a9b5-2d57f7bd9ed2%7D&action=embedview&wdAllowInteractivity=False&AllowTyping=True&ActiveCell=%27Review%27!D1&Item=Review!Print_Area&wdHideGridlines=True&wdInConfigurator=True%22%3E%3C%2Fiframe%3E" target="pmei"> 
+          <button class="tema menumdr" style="margin-left:50px;"><span>1. MASTERLIST</span></button></a>
+          <a href="https://script.google.com/macros/s/AKfycbxlbbEw1o1IRCaqvawvY0-ykuEnWg3nVL8E1ePFsGoDnUndrxgn/exec" target="blank_"><button class="tema menumdr" ><span>2. REQUEST</span></button></a>
+</span>
+</div>
+<div style="width:100%">
+<iframe class="mastersampleframe" src="" name="pmei" frameborder="0"></iframe>
+</div>
+<div id="tempat" class="bottomblock" style="height: 25px;">  </div>
+</div>
+
+
+
+
+
+     
+  <div id="link" style="display:none"><! link--------------------------------------------------------------------------------------->
+    <div class="artworkkepala">
+<a href="#" onclick="return showp('home','link')"><button class="backbutton">&#10096;</button></a>
+<img class="kedepan" src="asset/tgicon.png" alt="">
+<span class="tajuk" style="position: absolute;top:0px;left:180px;">LINKS & OTHER SITE </span>
+</div>
+<BR><br>
+<TABLE class="linktable" width="100%">
+  <tr>
+    <td><a href="https://topglove.sharepoint.com/" target="_blank"><button class="tema touch"> <img src="24. EBOOK\img\icon.png">
+          <br>TG CONNECT</button></a> </td>
+    <td> <a href="https://workflow.topglove.com:10443/jw/web/userview/SAPLOC/v/_/welcome" target="_blank"> <button class="tema touch"><img src="https://upload.wikimedia.org/wikipedia/en/9/9b/SAP_AG_%28logo%29.gif">
+          <br>LOC SAP-Joget</button></a> </td>
+    <td> <a href=" https://workflow.topglove.com:10443/jw/web/userview/vendorRegisteration/vendorRegister/_/welcome" target="_blank"><button class="tema touch"><img src="https://www.joget.org/wp-content/uploads/2020/01/Joget-logo-_RGB.png">
+          <br>Vendor Register</button></a> </td>
+    <td> <a href="https://workflow.topglove.com:10443/jw/web/userview/qa_ncas/ncas_qa/_/welcome" target="_blank"><button class="tema touch"><img src="https://www.joget.org/wp-content/uploads/2020/01/Joget-logo-_RGB.png">
+          <br>NCAS Joget</button></a> </td>
+    <td> <a href="https://outlook.office.com/mail/inbox" target="_blank"><button class="tema touch"><img src="https://www.windowscentral.com/sites/wpcentral.com/files/topic_images/2016/outlook-logo-topic.png">
+          <br>Outlook</button></a> </td>
+  </tr>
+  <tr>
+    <td> <a href="https://web.yammer.com/main/feed" target="_blank"><button class="tema touch"><img src="24. EBOOK\img\yammer.png">
+          <br>Yammer</button></a> </td>
+    <td>
+      <a href="https://teams.microsoft.com/" target="_blank"><button class="tema touch"><img src="https://statics.teams.cdn.office.net/hashed/favicon/prod/favicon-32x32-0b158ae.png">
+          <br>Teams</button></a>
+    </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</TABLE>
+
+ <span class="tajuk" style="left:180px;">QR For Mobile</span>
+
+ <style>
+    .qr   {background:rgba(148, 149, 194, 0.233);font-size: 20px; ;text-align: center ;width: 100%  ;height: 200px;margin: 3px 1px; color:  #1D4289;text-decoration: none;border: 0px solid;}
+    .hilang{ opacity:0.1;image-rendering: crisp-edges ;}
+    .hilang:hover{Opacity:1; cursor:none;image-rendering:none;}
+
+
+    </style>
+
+          <TABLE class="linktable" width="100%">
+
+  <tr>
+    <td><a href="https://topglove.sharepoint.com/" target="_blank"><button class="qr">TG CONNECT <br><img class="hilang" style="height:160px;"src="24. EBOOK\img\qrtgconnect.png"></button></a></td>
+    <td><a href="https://workflow.topglove.com:10443/jw/web/userview/qa_ncas/ncas_qa/_/welcome" target="_blank"><button class="tema qr">NCAS JOGET <img class="hilang" style="height:160px;"src="24. EBOOK\img\qrncasjoget.png"></button></a></td>
+    <td><a href="https://topglove.sharepoint.com/" target="_blank"><button class="qr">TG CONNECT <br><img class="hilang" style="height:160px;"src="24. EBOOK\img\qrtgconnect.png"></button></a></td>
+    <td><a href="https://topglove.sharepoint.com/" target="_blank"><button class="qr">TG CONNECT <br><img class="hilang" style="height:160px;"src="24. EBOOK\img\qrtgconnect.png"></button></a></td>
+    <td><a href="https://topglove.sharepoint.com/" target="_blank"><button class="qr">TG CONNECT <br><img class="hilang" style="height:160px;"src="24. EBOOK\img\qrtgconnect.png"></button></a></td>
+    </tr>
+          </TABLE>
+</div>
+
+      <div id="help" style="display:none"><! fhelp------------------------------------------->
+        <div class="kirakiri">
+          <a href="#" onclick="return show('home','help')"><button class="backbutton">&#10096;</button></a><img class="kedepan" src="asset/tgicon.png" alt="">
+          <div class="letak"><span class="tajuk">HELPDESK </span></div>
+          <a href="https://apps.powerapps.com/play/43438e69-7203-463d-ac8f-52b43db46252?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d" target="helpframe">
+
+            
+            <button class="tema button2">1.HELPDESK APP</button></a>
+          <br>
+    
+       
+          <a href='https://outlook.office365.com/owa/calendar/PMQCSupport@topglove.onmicrosoft.com/bookings/' target="helpframe"> <button class="tema button2">2. BOOKING Apps <BR>under development</button></a><br>
+
+  
+        </div>
+  
+        <div class="kira">
+  
+          <iframe class="frame90" src="" name="helpframe" frameborder="0"></iframe>
+  
+        </div>
+
+    </div>
+
+      <div id="faq" style="display:none"><! faq---------------------------https://forms.office.com/r/Wv9XbBS3Jk---------------->
+
+        <div class="kirakiri">
+          <a href="#" onclick="return showp('home','faq')"><button class="backbutton">&#10096;</button></a><img class="kedepan" src="asset/tgicon.png" alt="">
+          <div class="letak"><span class="tajuk">FREQUENTLY <br>&nbsp;&nbsp;ASKED <br>&nbsp;&nbsp;QUESTIONS</span></div>
+          <a href="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={bd1369ed-7aed-4332-a4e1-cc48a8484449}&action=embedview&ActiveCell='Sheet1'!D2&AllowTyping=False&wdHideHeaders=True&Item=Table2&wdInConfigurator=True&allowtransparency=True" target="faqframe">
+            <button class="tema button2">1. TABLE</button></a>
+          <br>
+          <a href="https://forms.office.com/pages/responsepage.aspx?id=p_V1Q15PJkWS72eJ84XwPUs3q1a1BiVLiec-7E5IHXJUOFVXVE5YSjc4UFJMNjRJWFZIMFdORVBVSS4u" target="faqframe"> <button class="tema button2">2. ASK NOW </button></a><br>
+          <a href="https://apps.powerapps.com/play/26f4883b-b4d6-4fa2-8ccb-63f6db8c8acb?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d" target="faqframe"> <button class="tema button2">3. TEST Powerapps </button></a><br>
+
+     
+  
+        </div>
+  
+        <div class="kira">
+  
+          <iframe class="frame90" src="https://topglove.sharepoint.com/sites/PMQC/_layouts/15/Doc.aspx?sourcedoc={bd1369ed-7aed-4332-a4e1-cc48a8484449}&action=embedview&ActiveCell='Sheet1'!D2&AllowTyping=False&wdHideHeaders=True&Item=Table2&wdInConfigurator=True&allowtransparency=True" 
+          name="faqframe" frameborder="0"></iframe>
+  
+        </div>
+
+
+
+
+
+          <div class="popupformask" id="popask" style="display:none"> <a href="#" style="position:absolute;top:50px;left:0px" onclick="return show('tempat','popask')"><button class="button1">CLOSE</button></a>
+            <button style="position:absolute;top:50px;left:0px" id="faqbtn" onclick="return show('popask','tempat')" class="button1">OPEN</button>
+            <iframe class="framefaq" name="faqform" src="" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+
+         
+          </div>
+      </div>
+
+
+
+
+
+<div id="samp" style="display:none">
+  <!  samp------------------------------------------>
+
+    <div class="kirakiri">
+      <a href="#" onclick="return showp('home','samp')"><button class="backbutton">&#10096;</button></a><img class="kedepan" src="asset/tgicon.png" alt="">
+      <br><br><span class="tajuk">&nbsp;SAMPLING  <br>&nbsp;&nbsp;PLAN <br>&nbsp;&nbsp;CALCULATOR</span><br><br>
+
+      <button onclick="sampa()" class="tema button2"> BELOW 1200 </button>
+      <button onclick="sampb()" class="tema button2"> 1201 TO 3200</button>
+      <button onclick="sampc()" class="tema button2"> 3201 TO 35000 </button>
+      <button onclick="sampd()" class="tema button2"> 35001 AND OVER </button>
+
+      <script>
+        function sampa() {
+          document.getElementById('qty1').innerHTML = '8 PCS'
+          document.getElementById('qty2').innerHTML = '0 ACCEPT 1 REJECT'
+          document.getElementById('qty3').innerHTML = '13 PCS'
+          document.getElementById('qty4').innerHTML = '0 ACCEPT 1 REJECT'
+          document.getElementById('qty5').innerHTML = '3 PCS'
+          document.getElementById('qty6').innerHTML = '0 ACCEPT 1 REJECT'
+          document.getElementById('samtajuk').innerHTML = 'BELOW 1200 Pcs'
+        }
+
+        function sampb() {
+          document.getElementById('qty1').innerHTML = '8 PCS'
+          document.getElementById('qty2').innerHTML = '0 ACCEPT 1 REJECT'
+          document.getElementById('qty3').innerHTML = '50 PCS'
+          document.getElementById('qty4').innerHTML = '1 ACCEPT 2 REJECT'
+          document.getElementById('qty5').innerHTML = '3 PCS'
+          document.getElementById('qty6').innerHTML = '0 ACCEPT 1 REJECT'
+          document.getElementById('samtajuk').innerHTML = '1201 TO 3200 Pcs'
+        }
+
+        function sampc() {
+          document.getElementById('qty1').innerHTML = '32 PCS'
+          document.getElementById('qty2').innerHTML = '1 ACCEPT 2 REJECT'
+          document.getElementById('qty3').innerHTML = '50 PCS'
+          document.getElementById('qty4').innerHTML = '1 ACCEPT 2 REJECT'
+          document.getElementById('qty5').innerHTML = '3 PCS'
+          document.getElementById('qty6').innerHTML = '0 ACCEPT 1 REJECT'
+          document.getElementById('samtajuk').innerHTML = '3201 TO 35000 Pcs'
+        }
+
+        function sampd() {
+          document.getElementById('qty1').innerHTML = '32 PCS'
+          document.getElementById('qty2').innerHTML = '1 ACCEPT 2 REJECT'
+          document.getElementById('qty3').innerHTML = '80 PCS'
+          document.getElementById('qty4').innerHTML = '2 ACCEPT 3 REJECT'
+          document.getElementById('qty5').innerHTML = '13 PCS'
+          document.getElementById('qty6').innerHTML = '1 ACCEPT 2 REJECT'
+          document.getElementById('samtajuk').innerHTML = '35001 Pcs AND OVER'
+     }
+   </script>
+</div> <div class="kira">
+            <BR><BR>
+            <span class="tajuk">&nbsp;&nbsp;TABLE OF SAMPLING PLAN FOR QUANTITY LOT RECEIVE&nbsp;</span><span class="tajuk" id="samtajuk"> (Select quantity)</span> <BR><BR>
+        <table class="samTable">
+          <thead>   <tr> <th>TYPE OF INSPECTION</th> <th>SAMPLING PLAN</th> <th>SAMPLING SIZE</th> <th>ACCEPTANCE</th> </tr> </thead>
+          <tbody> <tr>   <td rowspan="3" width="80">Visual Inspection</td>   <td width="80">Stage 1 = AQL 1.5 S3</td>
+         <td id="qty1" width="35">Select Qty1 </td>   <td id="qty2" width="50"> Select Qty2 </td> </tr> <tr>   <td>Stage 2 = AQL 1.0 S4</td>   <td id="qty3" rowspan="2">Select Qty3 </td>   <td id="qty4" rowspan="2">Select Qty4</td> </tr> <tr>   <td>Stage 3 = AQL 1.0 S4</td> </tr> <tr>   <td>Dimension Measurement</td>   <td>AQL 4.0 S1</td>   <td id="qty5" rowspan="6">Select Qty5</td>   <td id="qty6" rowspan="6">Select Qty6 </td> </tr>
+       <tr>   <td>Barcode Scan Test</td>   <td>AQL 4.0 S1</td> </tr> <tr>   <td>Rubbing Test</td>   <td>AQL 4.0 S1</td> </tr> <tr>   <td>Grain Direction Test</td>   <td>AQL 4.0 S1</td> </tr> <tr>   <td>Window Perforation Test</td>   <td>AQL 4.0 S1</td> </tr> <tr>   <td>Water Leak Test (Sur. Pouch only)</td>   <td>AQL 4.0 S1</td> </tr> <tr>   <td rowspan="3" width="80">GSM TEST</td>   <td width="80">Stage 1 = FIXED 1 PCS / DO</td>   <td width="35">1 PCS</td>   <td width="50">&ge;95% Pass&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&lt;95% Stage 2</td> </tr>
+        <tr>   <td>Stage 2 = FIXED 1 PCS / SIZE</td>   <td>1 PCS / SIZE</td>   <td>&ge;95% Stage 3 |&lt;95% Fail</td> </tr> <tr>   <td>Stage 3 = FIXED 1 PCS / SIZE</td>   <td>1 PCS / SIZE</td>   <td>&ge;95% Pass&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&lt;95% Fail</td> </tr> <tr>   <td>MATERIAL TEST</td>   <td>FIXED 1 PCS / DO</td>   <td>1 PCS / DO</td>   <td>PASS/FAIL</td> </tr> <tr>   <td>Counting (Bundle size) Maintain</td>   <td>FIXED 3 BUNDLE /PALLET</td>   <td>3 BUNDLE /PALLET</td>   <td>1 BDL AC.&nbsp; 2 BDL RE.</td> </tr> 
+        <tr>   <td>Fitting test (If fail Dimension Test)</td>   <td>FIXED 1 SET OF TEST</td>   <td>FIXED 1 SET OF TEST</td>   <td>PASS/FAIL</td> </tr>
+        <tr>   <td>Labeling (artwork)</td>   <td>FIXED 1 PCS / SIZE</td>   <td>1 PCS / SIZE</td>   <td>PASS/FAIL</td> </tr>
+        <tr>   <td>BCT (Malaysia only)</td>   <td>3 PCS / INCOMING LOT</td>   <td>3 INCOMING / WEEK</td>   <td>PASS/FAIL</td> </tr>
+      </tbody> </table> </div>
+
+      </div>
+      
+
+<div id="artw" style="display:none">
+  <!  artwork ------------------------------>
+          <div class="artworkkepala">
+
+            <a href="#" onclick="return showp('home','artw')"><button class="backbutton">&#10096;</button></a>
+
+            <img class="kedepan" src="asset/tgicon.png" alt="">
+            <span class="tajuk" style="position: absolute;top:0px;left:180px;">ARTWORK DIRECTORY & LABELING CHECKLIST </span>
+
+          </div>
+          <div class="majuk" id="hari">
+            <a href="24. EBOOK\html\listall.html" target="kah"><button class="tema menumdr">LOAD <span class="nombor xx">&#8635;</span></button></a> &nbsp;
+            <span style="color: #1d4289; font-size: 10px;"> &nbsp;&nbsp;&nbsp; &nbsp;SEARCH&nbsp;=&nbsp;<button>Ctrl</button>+<button>F</button></span>
+
+            <a href="#" onclick="return showp('dini','hari')"><button class="tema menu" style="float:right;">HIDE &#8593; </button></a>
+            <a href="#" onclick="return show('helpa','hari')"><button class="tema menu" style="float:right;">GUIDE</button></a>
+
+            <script>
+
+function loadDoc() {
+  $.get("asset/ajaxni.asp", function bongok (data));
+ 
+
+}
+              
+function bongok (data) {
+var asasa = data;
+getElementById('demoa').innerHTML = asasa ;
+}
+
+
+              </script>
+
+<div id="demoa" style="width:100%">
+  
+  <button type="button" onclick="loadDoc()">Change Content</button>
+
+
+
+  
+
+</div>
+
+            <!-----iframe class="kecik" src="" name="kah"></iframe-------->
+          </div>
+          <div id="helpa" class="majuk" style="display:none;background:white;">
+            <a href="#" onclick="return showp('hari','helpa')"><button class="tema menu" style="float:right;">BACK</button></a>
+            <span style="color: #1d4289; font-size: 11px;">
+              <strong>Tips:</strong><br>1.Prioritize unique material ID (example, P22ABC001NF3_01= "<strong>ABC001NF</strong>") ,then "Brand"
+              Brand with code number,can try using code (example= Tronex #<strong>1234</strong>,Ambi-Gard Style #<strong>1234</strong>,Glove Mania #<strong>1234</strong>)<br><br><strong>Tutorial:</strong>
+              <br>1.Shortcut:
+              <table class="satable">
+                <tbody>
+                  <tr>
+                    <td>Zoom In/Out</td>
+                    <td>Click image,Hold <button>Ctrl</button> and roll Mouse-wheel</td>
+                  </tr>
+                  <tr>
+                    <td>Move Left/Right</td>
+                    <td>Click image,Hold <button>Shift</button> and roll Mouse-wheel</td>
+                  </tr>
+                  <tr>
+                    <td>Move Up/Down</td>
+                    <td>Click image, and roll Mouse-wheel</td>
+                  </tr>
+                  <tr>
+                    <td>Rotate</td>
+                    <td>Right Click image, Select on menu</td>
+                  </tr>
+                  <tr>
+                    <td>Save As</td>
+                    <td>Right Click image, Select on menu</td>
+                  </tr>
+                </tbody>
+              </table>
+            </span>
+          </div>
+          <div id="dini" class="majuk" style="display:none">
+            <a href="#" onclick="history.back()"><button class="tema menu" style="float:left;">BACK</button></a>
+            <a href="#" onclick="return show('hari','dini')"><button class="tema menu" style="float:right;">UNHIDE &#8595;</button></a>
+            <span style="color: #1d4289; font-size: 12px;float:right;">Please wait system to load when click UNHIDE</span>
+          </div>
+
+          <iframe id="framefull" class="besar" src="" name="framefullx" style="margin-top: 20px;"></iframe>
+
+          <div id="check0"><span class="tajuk"> LABELING CHECKLIST </span><a href="#" onclick="return show('check1','check0')"><button class="tema menumdr">VIEW &#8595;</button></a>
+            <a href="24. EBOOK\html\checklist.html" target='blank_'><button class="tema menumdr">NEW TAB</button></a>
+          </div>
+
+          <div id="check1" style="display:none"><span class="tajuk"> LABELING CHECKLIST </span>
+
+            <a href="#" onclick="return show('check0','check1')">
+              <button class="tema menumdr">HIDE &#8593; </button></a>
+            <a href="24. EBOOK\html\checklist.html" target='swap'><button class="tema menumdr">RELOAD</button></a>
+            <a href="24. EBOOK\html\checklist.html" target='blank_'><button class="tema menumdr">NEW TAB</button></a>
+            <a href="24. EBOOK\html\checklist_sur.html" target='swap'><button class="tema menumdr">SURGICAL</button></a>
+            <a href="24. EBOOK\html\checklist_sur.html" target='blank_'><button class="tema menumdr">NEW TAB_SUR.</button></a>
+
+            <br><iframe class="checklist" name="swap" src="24. EBOOK\html\checklist.html" name="checklist"></iframe>
+          </div>
+
+      </div>
+
+
+
+      <div  id="purc" style="display:none"><! dpurchasing------------------------------------------->
+
+        <div class="kirakiri">
+          <a href="#" onclick="return showp('home','purc')"><button class="backbutton">&#10096;</button></a><img class="kedepan" src="asset/tgicon.png" alt="">
+          <BR>
+            <div class="letak">
+              <span class="tajuk">PURCHASING</span>
+            </div>
+
+              <a href="https://apps.powerapps.com/play/7ae8c539-0bb1-465c-b530-46ecdd0ab393?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d&p=sto" target="purx">
+                <button class="pasc"><span>STO ALERT</button></a><br>
+            <a href="https://apps.powerapps.com/play/7ae8c539-0bb1-465c-b530-46ecdd0ab393?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d&p=pic" target="purx">
+              <button class="pasc"><span>PMQC PIC</button></a><br>
+
+              <a href="24. EBOOK\news\Revise_PM_Purchasing_Struture_WEF_29_08_2022.pdf" target="purx">
+                <button class="pasc"><span>ORG.Chart</button></a><br>
+
+              <a href="https://apps.powerapps.com/play/344d6c88-145a-4937-b057-2412638d11be?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d?" target="purx">
+                <button class="pasc"><span>PMETTS</button></a><br>
+
+      
+    </div>
+
+      <div class="kira">
+        <iframe id="purxx" class="frame90" name="purx" frameborder="0" width="100%" ></iframe>
+
+      </div>
+
+      </div>
+
+
+
+
+
+</body>
+
+</html>
