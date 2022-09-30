@@ -1,0 +1,265 @@
+﻿<title>NCAS UDI</title>
+
+<link rel="icon" href="asset/pmqcicon.ico" type="image/x-icon">
+<meta charset='utf-8' />
+<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+<meta name='google' content='notranslate' />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<!------link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton&effect=neon"----->
+
+
+<head>
+
+  <style>
+html {height: 100%;}
+body {margin: 0;
+  font-family: az_ea_font,"Segoe UI",az_font,system-ui,-apple-system,BlinkMacSystemFont,Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;}
+
+  @keyframes slide {0% {transform: translateX(-25%);}100% {transform: translateX(25%);}}
+hr{font-size: 8px;}
+.homeword{   color:  #132e61;
+  text-decoration: none;
+  background-color: rgba(234, 243, 248);
+  font-size: 12px;
+  font-weight: bold;vertical-align: text-bottom;
+  position:absolute;
+  top:0px;left:0px;height: 40px;width: 40px;}
+  .pmqc     {color: #1D4289;text-align: left;font-size: 14px;font-weight: bold;padding: 1px 1px;text-decoration: none;}
+  .version  {position: absolute;top: 5;right: 0;text-align: right;}
+  .backbutton { height: 40px;width: 30px;font-size: 35px;border: 0px solid;line-height: 0px;
+    color: #1D4289;cursor:pointer ;
+    margin:0px 0px;position:absolute;top:0px;left:0px;background-color:transparent;}
+.backbutton:hover { background-color: rgba(234, 243, 248);}
+.kedepan { height: 30px;border: 0px solid;color: #1D4289;margin-left: 40px;margin-top: 5px;}
+.tajuk  {padding:5px 5px;font-weight: bold;font-size: 16px;margin: 5px 5px;text-shadow: 2px 3px rgb(0 0 1 / 10%) ;color: rgba(255,255,255,0.1);
+color: #1c4786;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+animation-name: induk;animation-duration: 10s;animation-iteration-count: infinite;}
+
+
+  /* span2 yang spesel */
+
+
+.alert    {position: absolute;top: 30%;left: 50%;text-align: center;-ms-transform: rotate(-45deg);-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-o-transform: rotate(-45deg);-sand-transform: rotate(-45deg); transform: rotate(-45deg);}
+.logo     {position: absolute;top: 0px;left: 2;}
+.tajukasal {color: #1d4289;font-weight: bold;font-size: 20px;margin: 5px 5px;text-shadow: 2px 3px rgb(0 0 1 / 10%);}
+.kepalo   {color: #1d4289;font-weight: bold;font-size: 13px;margin: 1px 1px;text-decoration: none;}
+.link     {margin-left: 50px;padding: 5px 3px;color: #1d4289;font-size: 16px;}
+.xx       {float:right;border-radius: 10%;color: rgb(19, 12, 37);text-align: center; width: 15px;font-size: 11px;border: none;display: inline-block;cursor: pointer;background: none;font-weight: bold;border:2px solid rgb(7, 4, 31);}
+.homeicon {float:left;font-size: 14px;cursor: pointer;}
+.nombor   {border-radius: 50%;color: #1d4289;margin: 2px 1px;text-align: center;width: 20px;font-size: 10px; border: none;display: inline-block;cursor: pointer;background: #1d43892d;font-weight: bold;padding: 1px 1px;}
+
+/* butang2 BaskervilleBE-Bold  */  
+.temaxx   {color: white;border: 0px solid;border-bottom: 0px solid ;text-decoration: none;display: inline-block;cursor: pointer;
+  background: #940000;padding: 0px 5px; background: -moz-linear-gradient(top, #ff7a7a 0%, #ff1414 66%, #940000 100%);background: -webkit-linear-gradient(top, #ff7a7a 0%, #ff1414 66%, #940000 100%);background: linear-gradient(to bottom, #ff7a7a 0%, #ff1414 66%, #940000 100%);}
+.tema     {font-weight:bold;color:  #1D4289;text-decoration: none;padding: 0px 5px;border: 0px solid ;display: inline-block;cursor: pointer;background:none;}
+.tema:hover { border: 0px solid#1D4289 ;background: linear-gradient(150deg,#ffffff, #f4f4fd, #7e8bb87e);}
+.tema:active{background:#132e614d;}
+
+
+.tema2  {color: white;border: 0px solid;border-bottom: 0px solid ;text-decoration: none;display: inline-block; background: #132e61;padding: 0px 5px;}
+#pass table button  {color: white;border: 0px solid;border-bottom: 0px solid ;text-decoration: none;display: inline-block;cursor: pointer;
+        background: #1D4289;font-size: 100px; border-radius: 10px  ;text-align: center ;width: 120px  ;height: 120px;margin: 3px 1px;background: linear-gradient(to bottom, #5785db 0%, #1D4289 66%, #1D4289 100%);}
+#pass table button:hover { text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #0000FF,0 0 0.6em #E5E5FF, 0 0 0.8em #E5E5FF, 0 0 1.0em #E5E5FF, 0 0 1.2em #E5E5FF;color: #fff;}
+#pass table button:active{background:#132e61;} #pass table {margin-left:auto;margin-right:auto;}
+.button2  {font-size:0.8em; border-radius: 0px   ;text-align: left   ;width: 100%  ;height: 30px;margin: 0px 3px;
+  font-family:"Calibri";font-weight: bold;}
+  /*"Corbel",sans-serif  */
+.sam      {font-size: 12px; border-radius: 5px   ;text-align: center ;width: 100px ;height: 25px;margin: 3px 1px;}
+.anak     {font-size: 12px; border-radius: 5px   ;text-align: center ;width: 30px  ;height: 25px;margin: 1px 1px;}
+.touch    {background:rgba(3, 5, 109, 0.15);font-size: 20px; border-radius: 10px  ;text-align: center ;width: 100%  ;height: 100px;margin: 3px 1px; -webkit-animation-duration: 1s;animation-duration: 1s;animation-fill-mode: both;animation-timing-function: ease-in-out;-webkit-animation-iteration-count: infinite;}
+.touch:hover { cursor: pointer;animation-name: bounce; -moz-animation-name: bounce;}
+  @keyframes bounce {	0%, 100%, 20%, 50%, 80% {-webkit-transform: translateY(0);-ms-transform: translateY(0);transform: translateY(0)}
+  40% {-webkit-transform: translateY(-30px);-ms-transform:translateY(-30px);transform: translateY(-30px)}
+  60% {-webkit-transform: translateY(-15px);-ms-transform:translateY(-15px);transform:translateY(-15px)}}
+.menumdr  {width: 100px ;}  
+.menu,.menumdr {font-size: 12px ;text-align: center ;height: 28px;background: white;border:1px solid  #D4E6F1;border-radius: 5px;margin: 0px 0px;}
+.menu     {width: 65px;}
+.menumdr:hover{background:#8eb2e918;border:1px solid  #D4E6F1;}
+.menu:hover{background:#8eb2e918;border:1px solid  #D4E6F1;}
+.linktable img {height: 30px; }.linktable td { width: 20%;} 
+  /* sampling punya  table*/
+
+  /* table letak button besar*/
+table.tapak             {width: 100%;border-collapse: collapse;}
+table.tapak tbody td    {padding: 2px 3px;height: 50px;}
+table.tapak thead td    {text-align: center;padding: 2px 3px;height: 30px;}
+table.notapak           {width: 100%;text-align: left;border-collapse: collapse;}
+table.notapak tbody td  {padding: 1px 1px;height: 200px;} 
+table.atas              {width: 100%;text-align: left;border-collapse: collapse;height: 150px}
+  /* table logo*/
+.top {font-family: BaskervilleBE-Bold;text-align:center;border:1px solid #1c4786;border-collapse: collapse;}
+.top th{font-size:17px;color:#FFFFFF;background:#1c4786}   
+.top tbody{font-size:7px;color:#1c4786;background:#FFFFFF;}   
+  /* table logo2*/
+.top2 {font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;font-weight:bold;text-align:center;border-collapse: collapse;margin-left:auto;margin-right:auto;}
+.top2 th{font-size:30px;color:#FFFFFF;background:#1c4786; padding:1px;border:2px solid #1c4786;}   
+.top2 tbody{font-size:11px;color:#1c4786;background:#FFFFFF;padding:1px;border:2px solid #1c4786;}
+.spacer{border:0px solid #ffffff}
+
+
+              /* bingkai2*/
+.countheight  {overflow: hidden; height: -webkit-calc(100% - 40px);height:    -moz-calc(100% - 40px);height: calc(100% - 40px);}
+.frame90 {width: 100%;overflow: hidden; }
+.framedepan {width: 100%;overflow: hidden; height: 95%;}
+.mastersampleframe  {width: 100%  ;overflow: hidden; height: -webkit-calc(100% - 35px);height:    -moz-calc(100% - 35px);height: calc(100% - 35px);}
+td .framedepan{overflow: hidden; height: 95%;}
+.besar      {width: 100%  ;overflow: hidden; height: -webkit-calc(100% - 75px);height:    -moz-calc(100% - 75px);height: calc(100% - 75px);}
+.mdrframe {width: 100%  ;overflow: hidden; height: 95%;}  
+iframe      {border: 0    ;border: 0;}
+.kecik      {width: 100%  ;height: 500px;background: white;}
+.checklist  {width: 880px ;height: 1220px;margin-left: 100px;}
+.contact    {width: 610px ;height: 450px;border: 0;}  
+/* Div */  
+.majuk          {position: absolute;  width:40%   ;      background:none;  top: 2px; right: 15px;  }
+.ummi           {position: absolute;  width:653px ;height: 120px  ;border: 0;            top: 0px; right: 0px;   }
+.kepalamdr      {position: absolute;  width:653px ;height:77px    ;border: 0;            top: 95px;left: 0px; background: #D4E6F1; display: none;}
+.artworkkepala  {position: absolute;  width:100%  ;height:35px    ;                      top: 0px;left: 0px; }
+.blocker        {position: absolute;  width:610px ;height: 60px  ;background: #D4E6F1;  top: 760px; left: 0px;color: #1d4289;}
+.texthover { position: relative;display: inline-block;}
+.textnya { display: none;position: absolute;margin-left:0px;height: 160px;color: #1d4289;background: #D4E6F1;font-size: 13px;width: 653px;box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2); z-index: 1;}
+.texthover:hover .textnya { display: block;}
+.kecikan button{width: 55px;background: white;border:1px solid  #D4E6F1;border-radius: 5px;}
+.texthover:hover .kepalamdr { display: block;}
+  /* Dropdown Button */
+
+.dropdown {display: inline-block;min-width:120px;width:100%;}
+.dropdown-list { display: none;position: fixed;margin-left:110px;margin-top:-30px;background-color: #FFFFFF; min-width: 200px;box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2); z-index: 1;}
+.dropdown-list a {padding: 0px 0px;text-decoration: none; display: block;}
+.dropdown:hover .dropdown-list { display:inline-block}
+.dropdown-lista { display: none;margin-left:1px;top:400px;position: absolute;background-color: #f1f1f1; font-size: 12px; width: 100px;box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2); z-index: 1;}
+.dropdown-lista a {text-decoration: none; font-weight: bold;display: block;}
+.dropdown-lista a:hover {background-color:whitesmoke ;text-shadow: 0 0 0.1em #fff, 0 0 1.0em #E5E5FF, 0 0 1.2em #E5E5FF;}
+.dropdown:hover .dropdown-lista { display:inline;}
+.dropdown:hover .dropdown-button { background-color: white;}0
+@keyframes induk { 0%   {background-color:rgba(132, 173, 235, 0.26);}
+50%  {background-color:rgb(255, 255, 255);}
+75% {background-color:rgba(133, 187, 236, 0.322);} 
+100%   {background-color:rgba(132, 173, 235, 0.26);}}
+.induk  {animation-name: induk;animation-duration: 4s;animation-iteration-count: infinite;}
+.bottomblock{background-color:#FFFFFF; overflow: hidden; position: fixed; bottom: 0;width: 100%;}
+.blockerms {position: absolute;width: 100%;height:30px;background: #D4E6F1;bottom: 0;color: #1d4289;font-weight: "bold";}
+.popupformask { position: absolute; width: 50%;overflow: hidden; height: 100%;bottom: 0px;}
+.framefaq {width: 100%;overflow: hidden; height: 100%;}
+.satable,.satable td { border: 1px solid black; }
+.satable { width: 100%; border-collapse: collapse;font-size: 13px }
+.popupform {position: absolute;width: 400px;height: 600px;top: 0px;right: 0px;box-shadow: 0px 36px 36px 0px rgba(0, 0, 1, 0.5)}
+    /* progresss bar saja bapak panjang */  
+.progress {position:absolute; top: 2px; right: 250px;height: 15px;display: block; width: 200px;background-color: white;border-radius: 2px;background-clip: padding-box;
+  /*margin: 0.5rem 0 1rem 0;*/
+  overflow: hidden;}
+.progress .indeterminate {background-color:black; }
+.progress .indeterminate:before {content: ''; position: absolute; background-color: #2C67B1; top: 0;left: 0; bottom: 0; will-change: left, right;
+  -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite; }
+.progress .indeterminate:after {content: '';position: absolute;background-color: #2C67B1; top: 0; left: 0;bottom: 0;will-change: left, right;-webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+          animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;-webkit-animation-delay: 1.15s;animation-delay: 1.15s; }
+@-webkit-keyframes indeterminate {0% {left: -35%;right: 100%; }60% {left: 100%;right: -90%; }100% { left: 100%;right: -90%; } }
+@keyframes indeterminate  {0% {left: -35%;right: 100%; }60% {left: 100%;right: -90%; }100% { left: 100%;right: -90%; } }
+@-webkit-keyframes indeterminate-short { 0% {left: -200%;right: 100%; } 60% {left: 107%;right: -8%; }100% {left: 107%;right: -8%; } }
+@keyframes indeterminate-short { 0% { left: -200%;right: 100%; } 60% {left: 107%;right: -8%; } 100% {left: 107%;right: -8%; } }
+.kira {width: -webkit-calc(100% - 112px);width:    -moz-calc(100% - 112px);
+  width: calc(100% - 112px);position:absolute;float:right;width:calc(100%-112px);
+  overflow: hidden;height:99%;top:0px;left:111px;border-left:solid 1px #1c468685;}
+.kirakiri {vertical-align:top;text-align: left;float:left;width: 110px;height:99%;border-right:solid 1px #f2f4f785;}
+.buten {color: white;font-size: 14px; font-weight: bold; text-align: center ; text-decoration: none;padding: 0px 1px; 
+  width:88px;cursor: pointer;border: 0px solid;border-bottom: 0px solid ;background: none;height:30PX;}
+.buten:hover { text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #0000FF,0 0 0.6em #E5E5FF, 0 0 0.8em #E5E5FF, 0 0 1.0em #E5E5FF, 0 0 1.2em #E5E5FF; color: #fff;} 
+.embed{width:620px;height:1100px;margin-top:30px;zoom: 0.80;-moz-transform: scale(0.80);-moz-transform-origin: 0 0;-o-transform: scale(0.80);-o-transform-origin: 0 0;-webkit-transform: scale(0.80);-webkit-transform-origin: 0 0;}
+
+  .padu2 { width: 100%; height:80px; top: 40px;}
+  .but1  {color: white; font-size: 14px; font-weight: bold; text-align: center ; text-decoration: none;padding: 0px 1px; 
+     width:100%;cursor: pointer;border: 0px solid;border-bottom: 0px solid ;background: none;height: 100%;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+  .but1:hover { text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #0000FF,0 0 0.6em #E5E5FF, 0 0 0.8em #E5E5FF, 0 0 1.0em #E5E5FF, 0 0 1.2em #E5E5FF; color: #fff;} 
+  .but1:active{background:#132e61;}    
+   xtable.utama    {border-collapse: collapse;height:110px; width: calc(100% - 270px); width: -webkit-calc(100% - 270px);width:    -moz-calc(100% - 270px)}
+   table.utama     {border-collapse: collapse;height:80px; width: 100%;background:#1d4389d2}
+   table.utama td  {padding: 2px 3px;height: 50%;width:11% ;background:#1d43898a }
+  .framenews{margin:20px 20px;color: #1d4289;font-size: 14px;height: calc(100% - 170px);width: calc(100% - 40px);
+border-radius: 15px;box-shadow:  5px 5px 10px #8a969dbe,-5px -5px 10px #ffffffa2; overflow: scroll;
+  -ms-overflow-style: none;}
+
+.sakau{background-color:white;width: 100%;padding-top: 56.25%; /* 1:1 Aspect Ratio */position: relative; /* If you want text inside of it */
+}
+/* If you want text inside of the container */
+.frame901 { position: absolute; top: 0; left: 0; bottom: 0; right: 0;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+function callnum()
+{var queryStr = window.location.search;var paramPairs = queryStr.substr(1).split('&');var params = {};
+for (var i = 0; i < paramPairs.length; i++) {var parts = paramPairs[i].split('=');params[parts[0]] = parts[1];};
+sndReq(params.sndReq);
+return show('samp','home')}
+
+function showp(shown, hidden) {
+  document.getElementById('decx').src ="asset/back.html";
+  document.getElementById('major').style.display = 'none';
+  document.getElementById(shown).style.display = 'block';
+document.getElementById(hidden).style.display = 'none';return false;
+
+}
+
+function fullscreen() {document.documentElement.requestFullscreen()}
+function nono() {document.documentElement.bac()}
+function xfullscreen() {document.exitFullscreen()}
+function show(shown, hidden) 
+{document.getElementById(shown).style.display = 'block';
+document.getElementById('major').style.display = 'block';
+document.getElementById(hidden).style.display = 'none';return false;}
+function greeds()     {alert("Hello! Welcome to PMQC E-Book")}
+function pinjam()     {
+  bukarequest();formms() ;
+}
+function tutupform()     {
+  document.getElementById('pop').style.display = 'none'; 
+  document.getElementById('framepop').src="";
+}
+function bukarequest(){document.getElementById('pop').style.display = 'block'; }
+function formms()     {document.getElementById('framepop').src ='https://forms.office.com/Pages/ResponsePage.aspx?id=p_V1Q15PJkWS72eJ84XwPUs3q1a1BiVLiec-7E5IHXJUNzQyTjc4NEs3TUpXUFVWQkdKU0ZMNVAyMC4u&embed=true';}
+function decapp()     {document.getElementById('decx').src ='https://apps.powerapps.com/play/7ae8c539-0bb1-465c-b530-46ecdd0ab393?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d'}
+function pmeapp()     {document.getElementById('decx').src ='https://apps.powerapps.com/play/344d6c88-145a-4937-b057-2412638d11be?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d?'}
+function artapp()     {document.getElementById('artid').src ='https://apps.powerapps.com/play/8c54b647-1b03-468b-90b0-b6ec44423e52?tenantId=4375f5a7-4f5e-4526-92ef-6789f385f03d'}
+function swayapp()    {document.getElementById('sway').src ='https://sway.office.com/s/U30Zi6yVOYpU347p/embed';document.getElementById('tutup').src ='24. EBOOK\img\nocheat.jpg';}
+function declare()    {decapp();return show('dec','home');}
+function pmett()      {pmeapp();return show('dec','home');}
+function ubah()       {swayapp();return show('swayd','gambar');}
+function launchart()  {artapp();return show('as','home');}
+function ubahVID()    {document.getElementById('framevideo').src = '';} 
+ </script>
+</head>
+<body>
+
+<!-----------------main tempat-->
+<div id="major" class="kira" >
+  <div class="sakau">
+    <iframe id="decx" class="frame901" name="framefull" frameborder="0" width="100%"  height="100%" src="asset/back.html"></iframe>
+  </div>
+</div>
+  <img  style="height: 25px;position:absolute;top: 7px;left:30px ;"   src="asset/tgicon.png" alt="">
+
+ <!------------------------------------------------------------------begin---------------------------------------------------------->
+
+
+<! form--------------------------------------------------------------------------------------->
+<div id="form" >
+  <div class="kirakiri">
+    <a href="#" onclick="return showp('home','form')">
+      <button class="backbutton">&#10096;</button></a>
+    <br><br><span class="tajuk">UDI NCAS</span>
+
+
+    <a href="udincas2.html" target="framefull"> <button class="tema button2">TEMPLATE MANUAL</button></a><br>
+    <a href="https://apps.powerapps.com/play/871e4c1e-f607-4773-8e0b-889707ffe692?p=ncasw&hideNavBar=true" target="blank_"> <button class="tema button2">APPS </button></a><br>
+    <a href="qrudi.PNG"           target="framefull"> <button class="tema button2">QR FOR MOBILE</button></a><br>
+  
+  </div>
+</div>
+
+
+</body>
+
+</html>
