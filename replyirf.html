@@ -47,8 +47,8 @@ box-shadow:  3px 3px 8px #bebebe,
 
     <table class='main' style='border-top:0px;'>
         <tr>
-            <th>IRF Number</th>
-            <td  >1000000 </td>
+            <th >IRF Number</th>
+            <td id="nom" >1000000 </td>
 
         </tr><tr>
             <th  style='width: 110px;'>Corrective Action</th><td  style='width: 780px;height: 100px;' > 
@@ -93,10 +93,8 @@ function carchange(){
                 const urlParams = new URLSearchParams(queryString);
                 const tulis = urlParams.get('tic')
                 document.getElementById('idnya').value = tulis ;
+                document.getElementById('nom').innerHTML = tulis ;
             }
-
-            //D:/html/replyisi.html?tic=100000
-           
             </script>
             
 </body>
