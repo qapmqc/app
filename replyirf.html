@@ -39,23 +39,23 @@ button {border-radius: 10px;cursor: pointer;border: 0px solid ;height: 30px;widt
 background: linear-gradient(145deg, #f0f0f0, #cacaca);
 box-shadow:  3px 3px 8px #bebebe,
              -3px -3px 8px #ffffff;padding-left: 5px;}
-
+ button:disabled{cursor:not-allowed;color: grey;opacity: 0.3;}
     </style>
 
 </head>
 <body onload="myFunction()">
 
-    <table class='main' style='border-top:0px;'>
+<table class='main' style='border-top:0px;'>
         <tr>
-            <th >IRF Number</th>
-            <td id="nom" >1000000 </td>
+            <th>IRF Number</th>
+            <td id="nom" ></td>
 
         </tr><tr>
-            <th  style='width: 110px;'>Corrective Action</th><td  style='width: 780px;height: 100px;' > 
-                <textarea id="tcar" name="tca" rows="4" cols="50" style='width: 750px;height: 100px;' onchange="carchange()">{Fill up here}</textarea>
+            <th  style='width: 110px;'>Corrective Action</th><td  style='width: 780px;height: 100px;vertical-align: text-top;' contenteditable="true" id="tcar"  onchange="carchange()" > 
+              
             </td></tr><tr>
-            <th >Preventive Action</th><td  style='width: 790px;height: 100px;' >
-                <textarea id="tpar" name="tpa" rows="4" cols="50" style='width: 750px;height: 100px;'  onchange="carchange()" >{Fill up here}</textarea>
+            <th >Preventive Action</th><td  style='width: 790px;height: 100px;vertical-align: text-top;' contenteditable="true" id="tpar"  onchange="carchange()"> 
+        
             </td></tr><tr>
             <th>Name</th><td >
                 <input type="text" id="tnama"  onchange="carchange()">
@@ -68,7 +68,7 @@ box-shadow:  3px 3px 8px #bebebe,
             <input type="text" name="par" id="pa" style="display:none;">
             <input type="text" id="namanya" name="namanya" style="display:none;">
 <br>
-            <button type="submit">SUBMIT</button>
+            <button type="submit"  id="sub" disabled="true"> SUBMIT</button>
 *Email CC will be send to once submitted
         </form>
     
@@ -77,14 +77,17 @@ box-shadow:  3px 3px 8px #bebebe,
 
 function carchange(){ 
     
-    var data = document.getElementById('tcar').value ;
-    var dat = document.getElementById('tpar').value ;
+    var data = document.getElementById('tcar').innerHTML ;
+    var dat = document.getElementById('tpar').innerHTML ;
     var dataa = data.replace('\n', '<br>');
     var datab = dat.replace('\n', '<br>');
     var datac = document.getElementById('tnama').value ;
     document.getElementById('ca').value = dataa;
     document.getElementById('pa').value = datab;
     document.getElementById('namanya').value = datac;
+    const button = document.getElementById('sub')
+    button.disabled = false
+
 
 }
             function myFunction(){
