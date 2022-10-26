@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit IRF</title>
+    <style>
+        @media print {page {page-break-after: always; }}
+        body {
+            background: white;
+            padding: 0px 0px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            width: 98%;font-size: small;margin: 0px 0px;
+        }
+
+        .main {
+            border: 0px solid #1D4289;
+            width: 100%;
+            margin-left: 0px;
+            font-size: 12px;
+        }
+
+        .main th {
+            font-weight: bold;
+            border: 1px solid #e8f0fd;
+            padding: 2px 5px;
+            background: #e8f0fd;
+            width: 100px;
+            text-align: left;
+        }
+
+        .main td {
+            border: 1px solid #e8f0fd;
+            padding: 2px 2px;
+            width: 196.6px;
+        }
+button {border-radius: 10px;cursor: pointer;border: 0px solid ;height: 30px;width: 100px;color: #1D4289;font-weight: bold;
+background: linear-gradient(145deg, #f0f0f0, #cacaca);
+box-shadow:  3px 3px 8px #bebebe,
+             -3px -3px 8px #ffffff;padding-left: 5px;}
+
+             button:disabled{cursor:not-allowed;color: grey;opacity: 0.3;}
+    </style>
+
+</head>
+<body onload="myFunction()">
+
+   <h1>PPS Form view sample</h1>
+    <table class='main' style='border-top:0px;'>
+
+ <tr><th>FTYP  Form Type         </th><td id="FTYP"></td></tr>
+ <tr><th>FUID  Form Unique       </th><td id="FUID"></td></tr>
+ <tr><th>LTHD  LAtterhead        </th><td id="LTHD"></td></tr>
+ <tr><th>PPSC  PPS code      </th><td id="PPSC"></td></tr>
+ <tr><th>CUST  Customer          </th><td id="CUST"></td></tr>
+ <tr><th>BRAD  Brand         </th><td id="BRAD"></td></tr>
+ <tr><th>CUTY  Country       </th><td id="CUTY"></td></tr>
+ <tr><th>MGOR  Marketing Officer         </th><td id="MGOR"></td></tr>
+ <tr><th>PGOR  Purchasing Officer        </th><td id="PGOR"></td></tr>
+ <tr><th>REGN  Region        </th><td id="REGN"></td></tr>
+ <tr><th>TOGE  Type of Glove         </th><td id="TOGE"></td></tr>
+ <tr><th>MTLG  Material  Glove       </th><td id="MTLG"></td></tr>
+ <tr><th>COLO  Color         </th><td id="COLO"></td></tr>
+ <tr><th>PWPF  PW/PF         </th><td id="PWPF"></td></tr>
+ <tr><th>DSGN  Design        </th><td id="DSGN"></td></tr>
+ <tr><th>FTRE  Feature       </th><td id="FTRE"></td></tr>
+ <tr><th>SLFE  Shelf Life        </th><td id="SLFE"></td></tr>
+ <tr><th>AQLL  AQL       </th><td id="AQLL"></td></tr>
+ <tr><th>MTCD  Material code         </th><td id="MTCD"></td></tr>
+ <tr><th>DMSN  Dimension         </th><td id="DMSN"></td></tr>
+ <tr><th>MTPT  Material Product      </th><td id="MTPT"></td></tr>
+ <tr><th>CFCR  Color of material         </th><td id="CFCR"></td></tr>
+ <tr><th>NOFC  No. of color      </th><td id="NOFC"></td></tr>
+ <tr><th>TFVH  Type of Varnish       </th><td id="TFVH"></td></tr>
+ <tr><th>LGSM  Locking System        </th><td id="LGSM"></td></tr>
+ <tr><th>PFRN  Perforation Shape         </th><td id="PFRN"></td></tr>
+ <tr><th>LGRT  Labeling Requirement      </th><td id="LGRT"></td></tr>
+ <tr><th>SALB  Size available        </th><td id="SALB"></td></tr>
+ <tr><th>PGSE  Packaging Style       </th><td id="PGSE"></td></tr>
+ <tr><th>LTNO  Lot No.       </th><td id="LTNO"></td></tr>
+ <tr><th>BCDN  Barcode No.       </th><td id="BCDN"></td></tr>
+ <tr><th>RVSN  Revision      </th><td id="RVSN"></td></tr>
+ <tr><th>CGDN  Change Description        </th><td id="CGDN"></td></tr>
+ <tr><th>ETDT  Effective date        </th><td id="ETDT"></td></tr>
+ <tr><th>CGBY  Change By         </th><td id="CGBY"></td></tr>
+ <tr><th>RMRK  Remark        </th><td id="RMRK"></td></tr>
+ <tr><th>PAGE  Page      </th><td id="PAGE"></td></tr>
+ <tr><th>REVN  Revision      </th><td id="REVN"></td></tr>
+ <tr><th>EFTD  Effective Date        </th><td id="EFTD"></td></tr>
+ <tr><th>PDNE  Product Name      </th><td id="PDNE"></td></tr>
+
+
+
+    </table>
+  <!---ttextarea id="tcar" name="tca" rows="4" cols="50" style='width: 750px;height: 100px;' onchange="carchange()">{Fill up here}</textarea---->
+        <!---textarea id="tpar" name="tpa" rows="4" cols="50" style='width: 750px;height: 100px;'  onchange="carchange()" >{Fill up here}</textarea---->
+ 
+            <script>
+
+
+            function myFunction(){
+                const queryString = window.location.search;
+                console.log(queryString);
+                const urlParams = new URLSearchParams(queryString);
+                const tFTYP = urlParams.get('a') ;
+                const tFUID = urlParams.get('b') ;
+                const tLTHD = urlParams.get('c') ;
+                const tPPSC = urlParams.get('d') ;
+                const tCUST = urlParams.get('e') ;
+                const tBRAD = urlParams.get('f') ;
+                const tCUTY = urlParams.get('g') ;
+                const tMGOR = urlParams.get('h') ;
+                const tPGOR = urlParams.get('i') ;
+                const tREGN = urlParams.get('j') ;
+                const tTOGE = urlParams.get('k') ;
+                const tMTLG = urlParams.get('l') ;
+                const tCOLO = urlParams.get('m') ;
+                const tPWPF = urlParams.get('n') ;
+                const tDSGN = urlParams.get('o') ;
+                const tFTRE = urlParams.get('p') ;
+                const tSLFE = urlParams.get('q') ;
+                const tAQLL = urlParams.get('r') ;
+                const tMTCD = urlParams.get('s') ;
+                const tDMSN = urlParams.get('t') ;
+                const tMTPT = urlParams.get('u') ;
+                const tCFCR = urlParams.get('v') ;
+                const tNOFC = urlParams.get('w') ;
+                const tTFVH = urlParams.get('x') ;
+                const tLGSM = urlParams.get('y') ;
+                const tPFRN = urlParams.get('z') ;
+                const tLGRT = urlParams.get('aa') ;
+                const tSALB = urlParams.get('ab') ;
+                const tPGSE = urlParams.get('ac') ;
+                const tLTNO = urlParams.get('ad') ;
+                const tBCDN = urlParams.get('ae') ;
+                const tRVSN = urlParams.get('af') ;
+                const tCGDN = urlParams.get('ag') ;
+                const tETDT = urlParams.get('ah') ;
+                const tCGBY = urlParams.get('ai') ;
+                const tRMRK = urlParams.get('aj') ;
+                const tPAGE = urlParams.get('ak') ;
+                const tREVN = urlParams.get('al') ;
+                const tEFTD = urlParams.get('am') ;
+                const tPDNE = urlParams.get('an') ;
+                document.getElementById('FTYP').innerHTML = tFTYP ;
+                document.getElementById('FUID').innerHTML = tFUID ;
+                document.getElementById('LTHD').innerHTML = tLTHD ;
+                document.getElementById('PPSC').innerHTML = tPPSC ;
+                document.getElementById('CUST').innerHTML = tCUST ;
+                document.getElementById('BRAD').innerHTML = tBRAD ;
+                document.getElementById('CUTY').innerHTML = tCUTY ;
+                document.getElementById('MGOR').innerHTML = tMGOR ;
+                document.getElementById('PGOR').innerHTML = tPGOR ;
+                document.getElementById('REGN').innerHTML = tREGN ;
+                document.getElementById('TOGE').innerHTML = tTOGE ;
+                document.getElementById('MTLG').innerHTML = tMTLG ;
+                document.getElementById('COLO').innerHTML = tCOLO ;
+                document.getElementById('PWPF').innerHTML = tPWPF ;
+                document.getElementById('DSGN').innerHTML = tDSGN ;
+                document.getElementById('FTRE').innerHTML = tFTRE ;
+                document.getElementById('SLFE').innerHTML = tSLFE ;
+                document.getElementById('AQLL').innerHTML = tAQLL ;
+                document.getElementById('MTCD').innerHTML = tMTCD ;
+                document.getElementById('DMSN').innerHTML = tDMSN ;
+                document.getElementById('MTPT').innerHTML = tMTPT ;
+                document.getElementById('CFCR').innerHTML = tCFCR ;
+                document.getElementById('NOFC').innerHTML = tNOFC ;
+                document.getElementById('TFVH').innerHTML = tTFVH ;
+                document.getElementById('LGSM').innerHTML = tLGSM ;
+                document.getElementById('PFRN').innerHTML = tPFRN ;
+                document.getElementById('LGRT').innerHTML = tLGRT ;
+                document.getElementById('SALB').innerHTML = tSALB ;
+                document.getElementById('PGSE').innerHTML = tPGSE ;
+                document.getElementById('LTNO').innerHTML = tLTNO ;
+                document.getElementById('BCDN').innerHTML = tBCDN ;
+                document.getElementById('RVSN').innerHTML = tRVSN ;
+                document.getElementById('CGDN').innerHTML = tCGDN ;
+                document.getElementById('ETDT').innerHTML = tETDT ;
+                document.getElementById('CGBY').innerHTML = tCGBY ;
+                document.getElementById('RMRK').innerHTML = tRMRK ;
+                document.getElementById('PAGE').innerHTML = tPAGE ;
+                document.getElementById('REVN').innerHTML = tREVN ;
+                document.getElementById('EFTD').innerHTML = tEFTD ;
+                document.getElementById('PDNE').innerHTML = tPDNE ;
+            }
+                
+              
+            //D:/html/ppsviewpara.html?a=FTYP15&b=1&c=LTHD15&d=PPSC15&e=CUST15&f=BRAD15&g=CUTY15&h=MGOR15&i=PGOR15&j=REGN15&k=TOGE15&l=MTLG15&m=COLO15&n=PWPF15&o=DSGN15&p=FTRE15&q=SLFE15&r=AQLL15&s=MTCD15&t=DMSN15&u=MTPT15&v=CFCR15&w=NOFC15&x=TFVH15&y=LGSM15&z=PFRN15&aa=LGRT15&ab=SALB15&ac=PGSE15&ad=LTNO15&ae=BCDN15&af=RVSN15&ag=CGDN15&ah=ETDT15&ai=CGBY15&aj=RMRK15&ak=PAGE15&al=REVN15&am=EFTD15&an=PDNE15
+            
+            </script>
+            
+
+</body>
+</html>
